@@ -13,7 +13,7 @@ const main = async () => {
         "image": "0.jpg",
         "price": 3.1,
         "rating": 0 / 0,
-        "catergory": "vegetables",
+        "category": "vegetables",
         "aisle": "produce"
       },
       {
@@ -23,7 +23,7 @@ const main = async () => {
         "image": "0.jpg",
         "price": 3.1,
         "rating": 0 / 0,
-        "catergory": "vegetables",
+        "category": "vegetables",
         "aisle": "produce"
       },
       {
@@ -33,7 +33,7 @@ const main = async () => {
         "image": "0.jpg",
         "price": 3.1,
         "rating": 0 / 0,
-        "catergory": "vegetables",
+        "category": "vegetables",
         "aisle": "produce"
       },
       {
@@ -43,7 +43,7 @@ const main = async () => {
         "image": "0.jpg",
         "price": 3.1,
         "rating": 0 / 0,
-        "catergory": "vegetables",
+        "category": "vegetables",
         "aisle": "produce"
       },
 
