@@ -4,7 +4,7 @@ const restrict = require('../helpers')
 
 const router = Router()
 
-router.get('/', (req, res) => res.send('This is the api root!'))
+router.get('/', (req, res) => res.send('This is the Peapod api root!'))
 
 router.post('/sign-up', controllers.signUp)
 router.post('/sign-in', controllers.signIn)
