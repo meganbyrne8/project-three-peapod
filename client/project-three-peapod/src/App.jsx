@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 import { verifyUser } from './services/user'
+import ProductsContainer from './components/ProductsContainer'
+import Product from './components/Product'
 import './App.css'
 
 export default class App extends Component {
@@ -28,7 +30,13 @@ export default class App extends Component {
 
     return (
       <div>
-        Hello World!
+        <Switch>
+          <Route exact path="/products">
+            <ProductsContainer />
+          </Route>
+          <Route exact path="/product/:id" component={Product}>
+          </Route>
+        </Switch>
       </div>
     )
   }
