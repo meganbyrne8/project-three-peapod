@@ -4,6 +4,8 @@ import { verifyUser } from './services/user'
 import ProductsContainer from './components/ProductsContainer'
 import Product from './components/Product'
 import './App.css'
+import Footer from './components/shared/Footer'
+
 
 export default class App extends Component {
   constructor() {
@@ -29,6 +31,7 @@ export default class App extends Component {
     // const { user } = this.state
 
     return (
+    <>
       <div>
         <Switch>
           <Route exact path="/products">
@@ -38,6 +41,8 @@ export default class App extends Component {
           </Route>
         </Switch>
       </div>
+      <Footer />
+      </>
     )
   }
 }
