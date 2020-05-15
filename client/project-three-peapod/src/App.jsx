@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 import { verifyUser } from './services/user'
 import './App.css'
+import Footer from './components/shared/Footer'
+
 
 export default class App extends Component {
   constructor() {
@@ -27,9 +29,12 @@ export default class App extends Component {
     // const { user } = this.state
 
     return (
+    <>
       <div>
         Hello World!
       </div>
+      <Footer />
+      </>
     )
   }
 }
