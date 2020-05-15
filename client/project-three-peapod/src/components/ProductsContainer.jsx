@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { getProducts } from '../services/product'
 import ProductCard from './ProductCard'
+import { Link } from 'react-router-dom'
 
 
 export default class ProductsContainer extends Component {
@@ -25,6 +26,7 @@ export default class ProductsContainer extends Component {
     return (
       <div>
         {populateProducts}
+        <Link to='/products'>ADD</Link>
       </div>
     )
   }
