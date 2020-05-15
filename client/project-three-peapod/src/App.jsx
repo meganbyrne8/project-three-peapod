@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 import { verifyUser } from './services/user'
@@ -6,13 +7,12 @@ import Product from './components/Product'
 import './App.css'
 import Footer from './components/shared/Footer'
 
-
 export default class App extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
-      user: null
-    }
+      user: null,
+    };
   }
 
   // async componentDidMount() {
@@ -24,7 +24,6 @@ export default class App extends Component {
 
   // setUser = user => this.setState({ user })
   // clearUser = () => this.setState({ user })
-
 
   render() {
     // const { setUser, clearUser } = this
