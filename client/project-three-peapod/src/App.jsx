@@ -1,8 +1,11 @@
-import React, { Component } from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
-import { verifyUser } from "./services/user";
-import "./App.css";
-import Nav from "./navigation/Nav";
+
+import React, { Component } from 'react'
+import { Route, Switch, Redirect } from 'react-router-dom'
+import { verifyUser } from './services/user'
+import ProductsContainer from './components/ProductsContainer'
+import Product from './components/Product'
+import './App.css'
+import Footer from './components/shared/Footer'
 
 export default class App extends Component {
   constructor() {
@@ -27,9 +30,18 @@ export default class App extends Component {
     // const { user } = this.state
 
     return (
+    <>
       <div>
-        <Nav />
+        <Switch>
+          <Route exact path="/products">
+            <ProductsContainer />
+          </Route>
+          <Route exact path="/product/:id" component={Product}>
+          </Route>
+        </Switch>
       </div>
-    );
+      <Footer />
+      </>
+    )
   }
 }

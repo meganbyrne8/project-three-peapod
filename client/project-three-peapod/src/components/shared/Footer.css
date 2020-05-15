@@ -1,0 +1,43 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    color: black;
+    height: 200px;
+    
+}
+
+.left {
+    list-style: none; 
+}
+
+.middle {
+    list-style: none;
+}
+
+.right {
+   list-style: none;
+} 
+
+.icons {
+    color: #58782C; 
+    display: flex;
+    justify-content: center; 
+}
+
+/* .legal {
+    display: flex;
+    justify-content: center;
+}
+
+.privacy {
+    display: flex;
+    justify-content: center;
+}
+
+.rights {
+    display: flex;
+    justify-content: center;
+} */
