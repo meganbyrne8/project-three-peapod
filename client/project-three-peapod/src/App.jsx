@@ -10,6 +10,7 @@ import SignOut from "./components/SignOut";
 import "./App.css";
 import Footer from "./components/shared/Footer";
 
+
 export default class App extends Component {
   constructor() {
     super();
@@ -45,6 +46,7 @@ export default class App extends Component {
             </Route>
             <Route exact path="/product/:id" component={Product}></Route>
             <Route exact path="/products/:id/edit" component={ProductEdit} />
+            <Route exact path="/products" component={ProductCreate}>
             <Route
               exact
               path="/signIn"
@@ -64,6 +66,7 @@ export default class App extends Component {
                 />
               )}
             />
+            </Route>
           </Switch>
         </div>
         <Footer />
@@ -71,3 +74,4 @@ export default class App extends Component {
     );
   }
 }
+            {/* <Route  exact path="/add-product" render={() => user ? <ProductCreate user={user} /> : <Redirect to='/signup' />}/> */}

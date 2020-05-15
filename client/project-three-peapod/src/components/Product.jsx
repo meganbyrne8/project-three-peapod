@@ -11,21 +11,25 @@ export default class Product extends Component {
       description: '',
       _id: ''
     }
+
   }
 
 
   async componentDidMount() {
     const product = await getProduct(this.props.match.params.id)
+  
     this.setState({
       title: product.title,
       image: product.image,
       description: product.description,
       _id: product._id
     })
+    
   }
 
 
   render() {
+    
     return (
       <div>
         <h2>{this.state.title}</h2>
@@ -34,7 +38,11 @@ export default class Product extends Component {
         {/* Link to a post edit page that allows you to edit */}
         <Link to={`/products/${this.state._id}/edit`}>Edit</Link>
         {/* onClick= grab the deleteProduct function and pass it to the button, make sure this works */}
-        <button>Delete</button>
+
+    
+        <button className="delete-button" onClick={() => deleteProduct(this.state._id)}>Delete</button>
+    
+
       </div >
     )
   }
