@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { getProduct, deleteProduct } from '../services/product'
 
 export default class Product extends Component {
@@ -7,7 +8,8 @@ export default class Product extends Component {
     this.state = {
       title: '',
       image: '',
-      description: ''
+      description: '',
+      _id: ''
     }
   }
 
@@ -17,7 +19,8 @@ export default class Product extends Component {
     this.setState({
       title: product.title,
       image: product.image,
-      description: product.description
+      description: product.description,
+      _id: product._id
     })
   }
 
@@ -29,7 +32,7 @@ export default class Product extends Component {
         <img src={this.state.image} />
         <p>{this.state.description}</p>
         {/* Link to a post edit page that allows you to edit */}
-        <button>Edit</button>
+        <Link to={`/products/${this.state._id}/edit`}>Edit</Link>
         {/* onClick= grab the deleteProduct function and pass it to the button, make sure this works */}
         <button>Delete</button>
       </div >

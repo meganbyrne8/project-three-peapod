@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { getProduct, deleteProduct } from '../services/product'
 
 class ProductDetail extends Component {
@@ -8,10 +9,11 @@ class ProductDetail extends Component {
       product = {
         title: '',
         description: '',
-        image: ''
+        image: '',
       }
     }
   }
+
 
   async componentDidMount() {
     let { id } = this.props.match.params
@@ -22,14 +24,15 @@ class ProductDetail extends Component {
 
   render() {
     const { product } = this.state
+
     return (
       <div className="product-detail">
         <div>{product.title}</div>
         <div>{product.image}</div>
         <div>{product.description}</div>
+        <div>{product._id}</div>
         <div className="button-container">
-          <button>Edit</button>
-          <button onClick={() => deleteProduct(product._id)}>Delete</button>
+          <Button>Save</Button>
         </div>
       </div>
     )
