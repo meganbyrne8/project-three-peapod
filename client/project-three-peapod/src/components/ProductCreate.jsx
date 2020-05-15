@@ -10,11 +10,18 @@ class ProductCreate extends Component {
         this.state = {
             product: {
                 title: '',
+                type: '',
                 description: '',
-                image: ''
+                image: '',
+                price: '',
+                rating: '',
+                category: '',
+                aisle: ''
+
             },
             created: false
         }
+        console.log("FRIDAY",this.state.product.title)
     }
 
     handleChange = (event) => {
@@ -24,12 +31,14 @@ class ProductCreate extends Component {
                 ...this.state.product,
                 [name]: value
             }
+
         })
     }
 
     handleSubmit = async (event) => {
         event.preventDefault()
         const created = await createProduct(this.state.product)
+        console.log("DRINKS", created)
         this.setState({ created })
     }
 
@@ -41,7 +50,8 @@ class ProductCreate extends Component {
         }
         return (
             // <Layout user={this.props.user}>
-                <form className="create-form" onSubmit={this.handleSubmit}>
+                <form className="create-form">
+
                     <input
                         className="input-name"
                         placeholder='Name'
@@ -51,14 +61,14 @@ class ProductCreate extends Component {
                         autoFocus
                         onChange={this.handleChange}
                     />
-                    {/* <input
+                    <input
                         className="input-price"
                         placeholder='Price'
                         value={product.price}
                         name='price'
                         required
                         onChange={this.handleChange}
-                    /> */}
+                    />
                     <textarea
                         className="textarea-description"
                         rows={10}
@@ -76,7 +86,40 @@ class ProductCreate extends Component {
                         required
                         onChange={this.handleChange}
                     />
-                    <button type='submit' className="submit-button">Submit</button>
+                    <input
+                        className="input-image-link"
+                        placeholder='Type'
+                        value={product.type}
+                        name='type'
+                        required
+                        onChange={this.handleChange}
+                    />
+                    <input
+                        className="input-image-link"
+                        placeholder='Rating'
+                        value={product.rating}
+                        name='rating'
+                        required
+                        onChange={this.handleChange}
+                    />
+                    <input
+                        className="input-image-link"
+                        placeholder='Category'
+                        value={product.category}
+                        name='category'
+                        required
+                        onChange={this.handleChange}
+                    />
+                    <input
+                        className="input-image-link"
+                        placeholder='Aisle'
+                        value={product.aisle}
+                        name='aisle'
+                        required
+                        onChange={this.handleChange}
+                    />
+
+                    <button type='submit' className="submit-button" onClick={this.handleSubmit}>Submit</button>
                 </form>
             // </Layout>
         )

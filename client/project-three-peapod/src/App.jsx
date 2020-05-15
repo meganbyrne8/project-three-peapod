@@ -4,6 +4,7 @@ import { verifyUser } from "./services/user";
 import ProductsContainer from "./components/ProductsContainer";
 import Product from "./components/Product";
 import ProductEdit from "./components/ProductEdit";
+import ProductCreate from "./components/ProductCreate";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import SignOut from "./components/SignOut";
@@ -16,15 +17,22 @@ export default class App extends Component {
     super();
     this.state = {
       user: null,
+      isLoaded: false
     };
   }
 
-  // async componentDidMount() {
-  //   const user = await verifyUser()
-  //   if (user) {
-  //     this.setState(user)
-  //   }
-  // }
+  async componentDidMount() {
+    console.log("componentDidMount")
+    try {
+      const user = await verifyUser()
+    if (user) {
+      this.setState(user)
+    }
+  } catch (err) {
+    console.log(err.message)
+  }
+    this.setState({isLoaded: true})
+  }
 
   // setUser = user => this.setState({ user })
   // clearUser = () => this.setState({ user })
@@ -35,7 +43,7 @@ export default class App extends Component {
     // const { setUser, clearUser } = this
     // const { user } = this.state
     const { setUser, clearUser } = this;
-    const { user } = this.state;
+    const { user, isLoaded } = this.state;
 
     return (
       <>
@@ -43,10 +51,15 @@ export default class App extends Component {
           <Switch>
             <Route exact path="/products">
               <ProductsContainer />
+              {isLoaded && !user 
+              ? <Redirect to='/signUp' />
+              : <ProductCreate user={user} /> }
+
             </Route>
             <Route exact path="/product/:id" component={Product}></Route>
             <Route exact path="/products/:id/edit" component={ProductEdit} />
-            <Route exact path="/products" component={ProductCreate}>
+
+        
             <Route
               exact
               path="/signIn"
@@ -66,7 +79,7 @@ export default class App extends Component {
                 />
               )}
             />
-            </Route>
+            
           </Switch>
         </div>
         <Footer />
@@ -74,4 +87,4 @@ export default class App extends Component {
     );
   }
 }
-            {/* <Route  exact path="/add-product" render={() => user ? <ProductCreate user={user} /> : <Redirect to='/signup' />}/> */}
+           
