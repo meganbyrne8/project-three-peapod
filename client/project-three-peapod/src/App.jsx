@@ -5,6 +5,7 @@ import { verifyUser } from './services/user'
 import ProductsContainer from './components/ProductsContainer'
 import Product from './components/Product'
 import ProductEdit from './components/ProductEdit'
+import ProductCreate from './components/ProductCreate'
 import './App.css'
 import Footer from './components/shared/Footer'
 
@@ -40,6 +41,8 @@ export default class App extends Component {
             <Route exact path="/product/:id" component={Product}>
             </Route>
             <Route exact path="/products/:id/edit" component={ProductEdit} />
+            <Route exact path="/products" component={ProductCreate}>
+            </Route>
           </Switch>
         </div>
         <Footer />
@@ -47,3 +50,4 @@ export default class App extends Component {
     )
   }
 }
+            {/* <Route  exact path="/add-product" render={() => user ? <ProductCreate user={user} /> : <Redirect to='/signup' />}/> */}
