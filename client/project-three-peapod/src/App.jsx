@@ -10,6 +10,7 @@ import SignUp from "./components/SignUp";
 import SignOut from "./components/SignOut";
 import "./App.css";
 import Footer from "./components/shared/Footer";
+import LandingNav from "./components/shared/navigation/LandingNav"
 
 
 export default class App extends Component {
@@ -82,7 +83,11 @@ export default class App extends Component {
             
           </Switch>
         </div>
+        <div className="main">
+          <LandingNav/>
         <Footer />
+        </div>
+       
       </>
     );
   }
