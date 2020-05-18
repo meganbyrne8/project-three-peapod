@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import "./SignIn.css";
 import { signIn } from "../services/user";
+import "./SignIn.css";
 
 class SignIn extends Component {
   constructor() {
@@ -52,7 +53,7 @@ class SignIn extends Component {
         </button>
       );
     } else {
-      return <button type="submit">Sign In</button>;
+      return <button type="submit" className="sign-in">Sign In</button>;
     }
   };
 
@@ -60,9 +61,9 @@ class SignIn extends Component {
     const { username, password } = this.state;
 
     return (
-      <div className="form-container">
+      <div className="form-container-sign-in">
         <h3>Sign In</h3>
-        <form onSubmit={this.onSignIn}>
+        <form onSubmit={this.onSignIn} className="form-sign-in">
           <label>Username</label>
           <input
             required
