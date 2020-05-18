@@ -57,11 +57,10 @@ For full link, see here: https://whimsical.com/Vh1dA7w8Aav3mFGTRqi4Gd
 |  SignOut     | functional |   n   |   n  | _The sign out comonent clears the JWT from the user's broswer and signs them out of the app, disallowing any changes to CRUD._       |
 |  Product Container    | functional |   n   |   n   | _This component is the display page that corresponds to the image provided titled Produce Section above. This component takes in the working products functionality and maps through each item, returning a Product Card component for each item, making this component completely scalable._       |
 |  Product Card     | functional |   y   |   y   | _The product card component inherts props and returns the exact informtion from our API with all releveant (requested) information._       |
-
 |  Product     | functional |   y   |   n   | _The product page displays information for just one, singular product. This corresponds to the image titled "Heirloom Tomato" above, which is displaying a react modal that can be exited out of to return to the product container._       |
 |  Product Create     | functional |   y   |   n  | _This component creates new products for the page, allowing any user that has admin access to easily add new items to the already existing API_       |
-|  Product Edit     | functional |   y   |   y  | _This component allows the admin to add or take away information for already exisinting components._       |
-|    Footer    | functional |   n   |   n   | _The photo will give attribution to AIC and credit to myself._ |
+|  Product Edit     | functional |   y   |   y  | _This component allows the admin to add or take away information for already exisinting components._ |
+|    Footer    | functional |   n   |   n   | _This component will be mostly static for the week sprint, but will reflect the Peapod site._ |
 
 <br>
 
