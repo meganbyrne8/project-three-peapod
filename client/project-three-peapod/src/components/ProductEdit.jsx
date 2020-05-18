@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import { getProduct, updateProduct } from '../services/product'
+import "./ProductEdit.css"
 
 class ProductEdit extends Component {
   constructor(props) {
@@ -51,8 +52,10 @@ class ProductEdit extends Component {
     return (
       <div className="product-edit">
         <div className="image-container">
+          <label className="label">Image</label>
           <img className="edit-product-image" src={product.image} alt={product.title} />
           <form onSubmit={this.handleSubmit}>
+            <label className="label">Image Link </label>
             <input
               className="edit-input-image-link"
               placeholder='Image Link'
@@ -64,8 +67,9 @@ class ProductEdit extends Component {
           </form>
         </div>
         <form className="edit-form" onSubmit={this.handleSubmit}>
+          <div className="label">Product Title</div>
           <input
-            className="input-name"
+            className="textarea-title"
             placeholder='Name'
             value={product.title}
             name='title'
@@ -81,6 +85,7 @@ class ProductEdit extends Component {
               required
               onChange={this.handleChange}
             /> */}
+          <div className="label">Product Description</div>
           <textarea
             className="textarea-description"
             rows={10}
