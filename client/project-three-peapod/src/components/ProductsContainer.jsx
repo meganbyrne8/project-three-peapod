@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { getProducts } from '../services/product'
 import ProductCard from './ProductCard'
 import { Link } from 'react-router-dom'
+import "./ProductsContainer.css"
 
 
 export default class ProductsContainer extends Component {
@@ -25,9 +26,17 @@ export default class ProductsContainer extends Component {
 
     return (
       <div>
-        {populateProducts}
-        <Link to='/products'>ADD</Link>
-      </div>
+        <header className="component-nav">Produce
+        <span className="close-out-button">X</span>
+        </header>
+        <h2>Top Selling Produce on Sale</h2>
+        <div className="containter-div">
+          {populateProducts}
+        </div>
+        <div className="add-button">
+          <Link to='/products'>ADD</Link>
+        </div>
+      </div >
     )
   }
 }
