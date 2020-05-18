@@ -1,0 +1,20 @@
+.center-nav {
+  display: flex;
+  justify-content: flex-end;
+  height: 12vh;
+}
+
+.peapod {
+  height: 52px;
+  width: 162px;
+}
+
+.account {
+  padding-left: 28vw;
+  padding-right: 2vw;
+}
+
+.sign-in a{
+  text-decoration: none;
+  color:green; 
+}

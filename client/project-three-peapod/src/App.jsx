@@ -9,30 +9,29 @@ import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import SignOut from "./components/SignOut";
 import "./App.css";
-import Home from './components/Home'
-
-
+import Footer from "./components/shared/Footer";
+import LandingNav from "./components/shared/navigation/LandingNav";
 
 export default class App extends Component {
   constructor() {
     super();
     this.state = {
       user: null,
-      isLoaded: false
+      isLoaded: false,
     };
   }
 
   async componentDidMount() {
-    console.log("componentDidMount")
+    console.log("componentDidMount");
     try {
-      const user = await verifyUser()
-    if (user) {
-      this.setState(user)
+      const user = await verifyUser();
+      if (user) {
+        this.setState(user);
+      }
+    } catch (err) {
+      console.log(err.message);
     }
-  } catch (err) {
-    console.log(err.message)
-  }
-    this.setState({isLoaded: true})
+    this.setState({ isLoaded: true });
   }
 
   // setUser = user => this.setState({ user })
@@ -53,15 +52,14 @@ export default class App extends Component {
           <Route exact path="/" render={() => <Home user={user} />} />
             <Route exact path="/products">
               <ProductsContainer />
-              {isLoaded && !user 
-              ? <Redirect to='/signUp' />
-              : <ProductCreate user={user} /> }
-
+              {isLoaded && !user ? (
+                <Redirect to="/signUp" />
+              ) : (
+                <ProductCreate user={user} />
+              )}
             </Route>
             <Route exact path="/product/:id" component={Product}></Route>
             <Route exact path="/products/:id/edit" component={ProductEdit} />
-
-        
             <Route
               exact
               path="/signIn"
@@ -81,12 +79,9 @@ export default class App extends Component {
                 />
               )}
             />
-            
           </Switch>
         </div>
-        
       </>
     );
   }
 }
-           

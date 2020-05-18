@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // import './SignUp.css'
 import { signUp, signIn } from "../services/user";
+import "./SignUp.css";
 
 class SignUp extends Component {
   constructor() {
@@ -53,7 +54,11 @@ class SignUp extends Component {
         </button>
       );
     } else {
-      return <button type="submit">Sign Up</button>;
+      return (
+        <button type="submit" className="continue">
+          Continue
+        </button>
+      );
     }
   };
 
@@ -62,8 +67,8 @@ class SignUp extends Component {
 
     return (
       <div className="form-container">
-        <h3>Sign Up</h3>
-        <form onSubmit={this.onSignUp}>
+        <h3>Create Account</h3>
+        <form onSubmit={this.onSignUp} className="form">
           <label>Username</label>
           <input
             required
@@ -91,6 +96,11 @@ class SignUp extends Component {
             placeholder="Password"
             onChange={this.handleChange}
           />
+          <label className="contain">
+            Must Contain:
+            <p>8 characters</p>
+            <p>Numbers, lowercase & uppercase </p>
+          </label>
           <label>Password Confirmation</label>
           <input
             required
