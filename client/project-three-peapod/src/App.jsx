@@ -49,12 +49,7 @@ export default class App extends Component {
       <>
         <div>
           <Switch>
-            <Route exact path="/">
-              <div className="main">
-                <LandingNav />
-                <Footer />
-              </div>
-            </Route>
+          <Route exact path="/" render={() => <Home user={user} />} />
             <Route exact path="/products">
               <ProductsContainer />
               {isLoaded && !user ? (
@@ -65,7 +60,6 @@ export default class App extends Component {
             </Route>
             <Route exact path="/product/:id" component={Product}></Route>
             <Route exact path="/products/:id/edit" component={ProductEdit} />
-
             <Route
               exact
               path="/signIn"
