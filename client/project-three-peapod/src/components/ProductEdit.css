@@ -1,0 +1,75 @@
+.product-edit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35vw;
+  height: 80vh;
+  margin: 10vh auto;
+}
+
+.edit-product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: vh;
+  margin: 0 auto;
+}
+
+.image-container {
+  width: 35vw;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.image-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.edit-form {
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.save-button {
+  font-size: 24px;
+  width: 272px;
+  height: 52px;
+  margin: 0 auto;
+  color: rgb(73, 126, 19);
+  border: 2px solid rgb(73, 126, 19);
+  margin-top: 25px;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+.edit-input-image-link {
+  width: 32vw;
+  height: 6vh;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.textarea-title {
+  width: 32vw;
+  height: 6vh;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+
+.textarea-description {
+  width: 32vw;
+  height: 6vh;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
