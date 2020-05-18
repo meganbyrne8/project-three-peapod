@@ -8,6 +8,7 @@ class DropdownBrowse extends Component {
       open: false,
       selection: [],
     };
+    console.log("user",props.user);
   }
 
   toggle() {
@@ -15,6 +16,9 @@ class DropdownBrowse extends Component {
       open: !this.state.open,
     });
   }
+
+
+  
 
   render() {
     return (
@@ -29,11 +33,11 @@ class DropdownBrowse extends Component {
             <p className="propsName">
               Browse Aisle<i className="arrow down"></i>
             </p>
-            {/* <p className="propsName">{this.props.state.name} OH YEA</p> */}
+            
           </div>
         </div>
         {this.state.open && (
-          <ul>Map Goes Here</ul>
+          <ul>{this.props.user}</ul>
           //add a map here  inside the UL
         )}
       </div>
