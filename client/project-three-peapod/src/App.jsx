@@ -12,7 +12,7 @@ import SignOut from "./components/SignOut";
 import "./App.css";
 import Home from './components/Home';
 import Footer from "./components/shared/Footer";
-// import LandingNav from "./components/shared/navigation/LandingNav";
+import Nav from "./components/shared/navigation/Nav";
 
 
 export default class App extends Component {
@@ -62,6 +62,7 @@ export default class App extends Component {
                   <ProductCreate user={user} />
                 )}
             </Route>
+            <Route exact path="/products" render={() => <Nav user={user} />} />
             <Route exact path="/product/:id" component={Product}></Route>
             <Route exact path="/products/:id/edit" component={ProductEdit} />
             <Route
