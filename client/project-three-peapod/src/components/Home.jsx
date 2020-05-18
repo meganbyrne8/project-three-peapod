@@ -1,28 +1,30 @@
 import React from 'react'
 import './Home.css'
-// import Layout from './shared/Layout'
 import Footer from './shared/Footer'
-import cover from './shared/peapod-cover-photo.png'
-import peapod from './shared/peapod-Logo.png'
+import peapodLogo from "./shared/peapod-Logo.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
  <>
-<nav className="home-nav">
-      <div className="peapod-Logo">
-        <img src={peapod} alt="peapod-Logo" />
+      <div className="center-nav">
+      <img src={peapodLogo} alt="" className="peapod" />
+      <div className="account">
+        <p>
+          Already have an account?
+          <span className="sign-in">
+            {" "}
+            <Link>Sign In</Link>
+          </span>
+        </p>
       </div>
-      <div className="account-sign-in">
-        <h4 className="account">Already have an account?</h4>
-        <h5 className="signIn">Sign In</h5>
-      </div>
-</nav>
-
-
+    </div>
       <div className="cover">
-        <h3>Shop for thousands of grocery items for your home or business</h3>
+        <h2>Shop for thousands of grocery items for your home or business</h2>
+        <h3>Grocery shop from anywhere.</h3>
+        <p>Delivery on your schedule</p>
       </div>
-      <Footer />
+    <Footer />
   </>
   )
 }

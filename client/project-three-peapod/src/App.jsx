@@ -9,8 +9,10 @@ import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import SignOut from "./components/SignOut";
 import "./App.css";
+import Home from './components/Home';
 import Footer from "./components/shared/Footer";
-import LandingNav from "./components/shared/navigation/LandingNav";
+// import LandingNav from "./components/shared/navigation/LandingNav";
+
 
 export default class App extends Component {
   constructor() {
@@ -49,6 +51,7 @@ export default class App extends Component {
       <>
         <div>
           <Switch>
+            {/* <LandingNav /> */}
           <Route exact path="/" render={() => <Home user={user} />} />
             <Route exact path="/products">
               <ProductsContainer />
