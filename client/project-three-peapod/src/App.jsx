@@ -9,7 +9,8 @@ import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import SignOut from "./components/SignOut";
 import "./App.css";
-import Footer from "./components/shared/Footer";
+import Home from './components/Home'
+
 
 
 export default class App extends Component {
@@ -49,6 +50,7 @@ export default class App extends Component {
       <>
         <div>
           <Switch>
+          <Route exact path="/" render={() => <Home user={user} />} />
             <Route exact path="/products">
               <ProductsContainer />
               {isLoaded && !user 
@@ -82,7 +84,7 @@ export default class App extends Component {
             
           </Switch>
         </div>
-        <Footer />
+        
       </>
     );
   }
