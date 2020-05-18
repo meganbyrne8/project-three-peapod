@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { verifyUser } from "./services/user";
+import Home from "./components/Home"
 import ProductsContainer from "./components/ProductsContainer";
 import Product from "./components/Product";
 import ProductEdit from "./components/ProductEdit";
@@ -49,14 +50,14 @@ export default class App extends Component {
       <>
         <div>
           <Switch>
-          <Route exact path="/" render={() => <Home user={user} />} />
+            <Route exact path="/" render={() => <Home user={user} />} />
             <Route exact path="/products">
               <ProductsContainer />
               {isLoaded && !user ? (
                 <Redirect to="/signUp" />
               ) : (
-                <ProductCreate user={user} />
-              )}
+                  <ProductCreate user={user} />
+                )}
             </Route>
             <Route exact path="/product/:id" component={Product}></Route>
             <Route exact path="/products/:id/edit" component={ProductEdit} />
