@@ -6,7 +6,7 @@ import "./Nav.css";
 import Dropdown from "./DropdownShop";
 import DropdownBrowse from "./DropdownBrowse";
 
-function Nav() {
+function Nav(props) {
   return (
     <div className="nav">
       <div>
@@ -14,7 +14,7 @@ function Nav() {
       </div>
       <div className="drop-down">
         <h3>
-          <DropdownBrowse />
+          <DropdownBrowse user={props.user}/>
           {/* <i className="arrow down"></i> */}
         </h3>
         <h3 className="shop">
