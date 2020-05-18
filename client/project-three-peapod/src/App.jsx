@@ -10,7 +10,7 @@ import SignUp from "./components/SignUp";
 import SignOut from "./components/SignOut";
 import "./App.css";
 import Footer from "./components/shared/Footer";
-import LandingNav from "./components/shared/navigation/LandingNav";
+import Nav from "./components/shared/navigation/Nav";
 
 export default class App extends Component {
   constructor() {
@@ -49,7 +49,7 @@ export default class App extends Component {
       <>
         <div>
           <Switch>
-          <Route exact path="/" render={() => <Home user={user} />} />
+            <Route exact path="/" render={() => <Nav user={user} />} />
             <Route exact path="/products">
               <ProductsContainer />
               {isLoaded && !user ? (
