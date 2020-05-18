@@ -1,0 +1,26 @@
+p {
+  font-size: 13px;
+  margin: 5px 5px;
+}
+
+.product-cards {
+  box-shadow: 0px 0px 3px 1px #cecece;
+  margin: 17px 17px;
+  padding: 10px;
+  text-align: center;
+}
+
+.price-button-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  font-weight: 600;
+}
+
+.add-to-cart {
+  background-color: #4D6E22;
+  color: #FFFFFF;
+  height: 30px;
+  margin-left: 5px;
+}

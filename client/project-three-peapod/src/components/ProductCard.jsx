@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import "./ProductCard.css"
 
 class Product extends Component {
   constructor(props) {
@@ -17,12 +18,16 @@ class Product extends Component {
 
   render() {
     return (
-      <div>
+      <div className="product-cards">
         <Link to={this.state.url}>
-          <h1>{this.props.title}</h1>
+          <img src={this.props.image} />
         </Link>
-        <img src={this.props.image} />
+        <h5>{this.props.title}</h5>
         <p>{this.props.description}</p>
+        <div className="price-button-div">
+          <p className="price-lower">Temp Price</p>
+          <button className="add-to-cart">Add To Cart</button>
+        </div>
       </div>
     )
   }
