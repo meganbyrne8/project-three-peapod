@@ -20,12 +20,16 @@ class Product extends Component {
     return (
       <div className="product-cards">
         <Link to={this.state.url}>
-          <img src={this.props.image} />
+          <div className="thumbnail-image">
+            <img src={this.props.image} />
+          </div>
         </Link>
-        <h5>{this.props.title}</h5>
-        <p>{this.props.description}</p>
+        <div className="product-info">
+          <h5>{this.props.title}</h5>
+          <p>{this.props.description}</p>
+        </div>
         <div className="price-button-div">
-          <p className="price-lower">Temp Price</p>
+          <span className="price-lower">Temp Price</span>
           <button className="add-to-cart">Add To Cart</button>
         </div>
       </div>

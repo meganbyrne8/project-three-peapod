@@ -25,13 +25,25 @@ export default class ProductsContainer extends Component {
 
 
     return (
-      <div>
-        <header className="component-nav">Produce
-        <span className="close-out-button">X</span>
+      <div className="products-container">
+        <header className="component-nav">
+          Produce
+          <div className="close-out-button">
+            <span>&lt;</span>
+          </div>
         </header>
-        <h2>Top Selling Produce on Sale</h2>
         <div className="containter-div">
-          {populateProducts}
+          <div className="headline">
+            <div className="subhead">
+              <h2>Top Selling Produce on Sale</h2>
+            </div>
+            <div className="view-all">
+              <h2>View All ></h2>
+            </div>
+          </div>
+          <div className="product-gallery">
+            {populateProducts}
+          </div>
         </div>
         <div className="add-button">
           <Link to='/products'>ADD</Link>
