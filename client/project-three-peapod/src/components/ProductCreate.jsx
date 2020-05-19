@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import './ProductCreate.css'
+import './ProductCreate.css'
 // import Layout from './shared/Layout'
 import { Redirect } from 'react-router-dom'
 import { createProduct } from '../services/product'
@@ -21,7 +21,6 @@ class ProductCreate extends Component {
       },
       created: false
     }
-    console.log("FRIDAY", this.state.product.title)
   }
 
   handleChange = (event) => {
@@ -69,9 +68,8 @@ class ProductCreate extends Component {
           required
           onChange={this.handleChange}
         />
-        <textarea
+        <input
           className="textarea-description"
-          rows={10}
           placeholder='Description'
           value={product.description}
           name='description'

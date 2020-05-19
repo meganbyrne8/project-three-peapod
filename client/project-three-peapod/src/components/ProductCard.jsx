@@ -29,7 +29,7 @@ class Product extends Component {
           <p>{this.props.description}</p>
         </div>
         <div className="price-button-div">
-          <span className="price-lower">Temp Price</span>
+          <span className="price-lower">${this.props.price}</span>
           <button className="add-to-cart">Add To Cart</button>
         </div>
       </div>
