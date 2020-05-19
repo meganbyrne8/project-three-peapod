@@ -15,6 +15,9 @@ import Footer from "./components/shared/Footer";
 import Nav from "./components/shared/navigation/Nav";
 
 
+import SideNavContainer from './components/SideNav/SideNavContainer'
+import BrowseAisles from "./components/BrowseAisles";
+
 export default class App extends Component {
   constructor() {
     super();
@@ -52,8 +55,10 @@ export default class App extends Component {
       <>
         <div>
           <Switch>
-            {/* <LandingNav /> */}
             <Route exact path="/" render={() => <Home user={user} />} />
+            <Route exact path="/" render={() => <SideNavContainer />} />
+            <Route exact path="/" render={() => <BrowseAisles />} />
+
             <Route exact path="/products">
               <ProductsContainer />
               {isLoaded && !user ? (
