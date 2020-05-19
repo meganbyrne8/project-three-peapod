@@ -12,6 +12,9 @@ import "./App.css";
 import Footer from "./components/shared/Footer";
 import LandingNav from "./components/shared/navigation/LandingNav";
 
+import SideNavContainer from './components/SideNav/SideNavContainer'
+import BrowseAisles from "./components/BrowseAisles";
+
 export default class App extends Component {
   constructor() {
     super();
@@ -49,14 +52,16 @@ export default class App extends Component {
       <>
         <div>
           <Switch>
-          <Route exact path="/" render={() => <Home user={user} />} />
+            {/* <Route exact path="/" render={() => <Home user={user} />} /> */}
+            <Route exact path="/" render={() => <SideNavContainer />} />
+            <Route exact path="/" render={() => <BrowseAisles />} />
             <Route exact path="/products">
               <ProductsContainer />
               {isLoaded && !user ? (
                 <Redirect to="/signUp" />
               ) : (
-                <ProductCreate user={user} />
-              )}
+                  <ProductCreate user={user} />
+                )}
             </Route>
             <Route exact path="/product/:id" component={Product}></Route>
             <Route exact path="/products/:id/edit" component={ProductEdit} />
