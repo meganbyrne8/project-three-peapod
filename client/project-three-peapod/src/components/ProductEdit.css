@@ -2,23 +2,31 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 35vw;
-  height: 80vh;
-  margin: 10vh auto;
+  width: 55vw;
+  height: 95vh;
+  margin: 0 auto;
+
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px; 
+  margin-bottom: 0px;
 }
 
 .edit-product-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: vh;
-  margin: 0 auto;
+  width: 40vh;
+  margin:0 auto;
 }
 
 .image-container {
-  width: 35vw;
+  width: 50vw;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .image-container form {
@@ -29,46 +37,55 @@
   margin-top: 25px;
 }
 
-.edit-form {
-  width: 35vw;
+form.edit-form {
+  width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0px;
+}
+
+form.edit-form2 {
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px;
 }
 
 .save-button {
-  font-size: 24px;
-  width: 272px;
-  height: 52px;
-  margin: 0 auto;
-  color: rgb(73, 126, 19);
-  border: 2px solid rgb(73, 126, 19);
-  margin-top: 25px;
+  font-size: 14px;
+  width: 152px;
+  height: 42px;
+  margin: 15px auto;
+  color: white;
+  
 }
 
 .label {
   display: flex;
   justify-content: center;
   font-size: 18px;
-  margin: 0 auto;
+  margin: 15px auto;
+  font-weight: bold; 
 }
 
 .edit-input-image-link {
-  width: 32vw;
+  width: 42vw;
   height: 6vh;
   margin-bottom: 20px;
   margin: 0 auto;
 }
 
 .textarea-title {
-  width: 32vw;
+  width: 42vw;
   height: 6vh;
   margin-bottom: 20px;
   margin: 0 auto;
 }
 
 .textarea-description {
-  width: 32vw;
+  width: 42vw;
   height: 6vh;
   margin-bottom: 20px;
   margin: 0 auto;
