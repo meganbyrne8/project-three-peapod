@@ -56,6 +56,8 @@ export default class App extends Component {
         <div>
           <Switch>
             <Route exact path="/" render={() => <Home user={user} />} />
+            <Route exact path="/" render={() => <SignIn />} />
+            <Route exact path="/" render={() => <BrowseHomePage />} />
             <Route exact path="/" render={() => <SideNavContainer />} />
             <Route exact path="/" render={() => <BrowseAisles />} />
             <Route exact path="/browse" render={() => <BrowseHomePage />} />

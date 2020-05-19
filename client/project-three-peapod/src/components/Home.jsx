@@ -12,9 +12,9 @@ const Home = () => {
       <div className="account">
         <p>
           Already have an account?
-          <span className="sign-in">
+          <span className="sign">
             {" "}
-            <Link>Sign In</Link>
+            <Link to="/signIn">Sign In</Link>
           </span>
         </p>
       </div>
@@ -57,7 +57,7 @@ const Home = () => {
                 placeholder="Search"
                 type="text"
                 />
-                <button><strong>Browse Now</strong></button>
+                <Link to="/browse"><button><strong>Browse Now</strong></button></Link>
         </form>
         </div>
     <Footer />
