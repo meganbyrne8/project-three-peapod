@@ -50,11 +50,14 @@ class ProductEdit extends Component {
     }
 
     return (
+      <div className="main-container">
+        <h1 className="header">Product Edit </h1>
       <div className="product-edit">
+        
         <div className="image-container">
           <label className="label">Image</label>
           <img className="edit-product-image" src={product.image} alt={product.title} />
-          <form onSubmit={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit} className="edit-form">
             <label className="label">Image Link </label>
             <input
               className="edit-input-image-link"
@@ -66,7 +69,7 @@ class ProductEdit extends Component {
             />
           </form>
         </div>
-        <form className="edit-form" onSubmit={this.handleSubmit}>
+        <form className="edit-form2" onSubmit={this.handleSubmit}>
           <div className="label">Product Title</div>
           <input
             className="textarea-title"
@@ -98,6 +101,7 @@ class ProductEdit extends Component {
           />
           <button type='submit' className="save-button">Save</button>
         </form>
+        </div>
       </div>
     )
   }
