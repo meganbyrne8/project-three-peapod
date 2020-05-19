@@ -1,0 +1,112 @@
+
+.center-nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 12vh;
+    padding-top: 50px;
+    padding-bottom: 0px;
+  }
+  
+  .peapod-Logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+  }
+  
+  .account {
+    padding-left: 28vw;
+    padding-right: 2vw;
+  }
+  
+  .sign{
+      border: none;
+  }
+  .sign a{
+    color:#58782C; 
+    text-decoration: none;
+    font-size: 15px;
+   
+    
+  }
+.cover {
+    background-image: url('https://i.imgur.com/YuqrxXU.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;   
+  
+
+}
+
+.cover h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    padding: 200px;
+    padding-right: 450px;
+    padding-left: 450px;
+    padding-bottom: 0px;
+}
+
+.cover h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    padding-right: 450px;
+    padding-left: 450px;
+   
+}
+
+.cover p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  padding-right: 450px;
+  padding-left: 450px;
+}
+
+
+.radio {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  font-size: 22px;   
+  padding-left: 160px;
+  padding-right: 160px;
+  margin-bottom: 12px;
+}
+
+.search-home {
+  display: flex;
+  justify-content: center; 
+}
+
+
+
+.search-input {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  margin: 40px;
+  padding: 10px 10px 5px 10px;
+  width: 20vw;
+}
+
+button {
+  background-color: #4d6e22;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1px;
+  margin: 40px;
+  padding: 5px 10px 5px 10px;
+  width: 15vw;
+}

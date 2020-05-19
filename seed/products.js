@@ -4,117 +4,57 @@ const Product = require('../models/product')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
-    const products =
+  const products =
     [
-        {
-            "title": "Brown eggs",
-            "type": "dairy",
-            "description": "Raw organic brown eggs in a basket",
-            "filename": "0.jpg",
-            "height": 600,
-            "width": 400,
-            "price": 28.1,
-            "rating": 4
-          }, {
-            "title": "Sweet fresh stawberry",
-            "type": "fruit",
-            "description": "Sweet fresh stawberry on the wooden table",
-            "filename": "1.jpg",
-            "height": 450,
-            "width": 299,
-            "price": 29.45,
-            "rating": 4
-          }, {
-            "title": "Asparagus",
-            "type": "vegetable",
-            "description": "Asparagus with ham on the wooden table",
-            "filename": "2.jpg",
-            "height": 450,
-            "width": 299,
-            "price": 18.95,
-            "rating": 3
-          }, {
-            "title": "Green smoothie",
-            "type": "dairy",
-            "description": "Glass of green smoothie with quail egg's yolk, served with cocktail tube, green apple and baby spinach leaves over tin surface.",
-            "filename": "3.jpg",
-            "height": 600,
-            "width": 399,
-            "price": 17.68,
-            "rating": 4
-          }, {
-            "title": "Raw legums",
-            "type": "vegetable",
-            "description": "Raw legums on the wooden table",
-            "filename": "4.jpg",
-            "height": 450,
-            "width": 299,
-            "price": 17.11,
-            "rating": 2
-          }, {
-            "title": "Baking cake",
-            "type": "dairy",
-            "description": "Baking cake in rural kitchen - dough  recipe ingredients (eggs, flour, sugar) on vintage wooden table from above.",
-            "filename": "5.jpg",
-            "height": 450,
-            "width": 675,
-            "price": 11.14,
-            "rating": 4
-          }, {
-            "title": "Pesto with basil",
-            "type": "vegetable",
-            "description": "Italian traditional pesto with basil, chesse and oil",
-            "filename": "6.jpg",
-            "height": 450,
-            "width": 299,
-            "price": 18.19,
-            "rating": 2
-          }, {
-            "title": "Hazelnut in black ceramic bowl",
-            "type": "vegetable",
-            "description": "Hazelnut in black ceramic bowl on old wooden background. forest wealth. rustic style. selective focus",
-            "filename": "7.jpg",
-            "height": 450,
-            "width": 301,
-            "price": 27.35,
-            "rating": 0
-          }, {
-            "title": "Fresh stawberry",
-            "type": "fruit",
-            "description": "Sweet fresh stawberry on the wooden table",
-            "filename": "8.jpg",
-            "height": 600,
-            "width": 399,
-            "price": 28.59,
-            "rating": 4
-          }, {
-            "title": "Lemon and salt",
-            "type": "fruit",
-            "description": "Rosemary, lemon and salt on the table",
-            "filename": "9.jpg",
-            "height": 450,
-            "width": 299,
-            "price": 15.79,
-            "rating": 5
-          }, {
-            "title": "Homemade bread",
-            "type": "bakery",
-            "description": "Homemade bread",
-            "filename": "10.jpg",
-            "height": 450,
-            "width": 301,
-            "price": 17.48,
-            "rating": 3
-          }
+      {
+        "title": "Heirloom Tomatoes",
+        "type": "vegetable",
+        "description": "Seasonal locally grown tomatoes",
+        "image": "https://unionmarket.com/wp-content/uploads/2018/08/Union-Market-Heirloom-Tomato-Varieties.jpg",
+        "price": 3.1,
+        "rating": 0 / 0,
+        "category": "vegetables",
+        "aisle": "produce"
+      },
+      {
+        "title": "Zucchini",
+        "type": "vegetable",
+        "description": "Seasonal locally grown zucchini",
+        "image": "https://www.jessicagavin.com/wp-content/uploads/2018/05/zucchini-2-1200.jpg",
+        "price": 3.1,
+        "rating": 0 / 0,
+        "category": "vegetables",
+        "aisle": "produce"
+      },
+      {
+        "title": "Shallots",
+        "type": "vegetable",
+        "description": "Locally grown shallot",
+        "image": "https://draxe.com/wp-content/uploads/2015/06/WhatIsaShallotHeader.jpg",
+        "price": 3.1,
+        "rating": 0 / 0,
+        "category": "vegetables",
+        "aisle": "produce"
+      },
+      {
+        "title": "Carrots",
+        "type": "vegetable",
+        "description": "Seasonal locally grown carrots",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRou9od8LjnnETrA3ONJGUqUR1E83P_MBsgYXg6m6ZqOJtGLzGL&usqp=CAU",
+        "price": 3.1,
+        "rating": 0 / 0,
+        "category": "vegetables",
+        "aisle": "produce"
+      },
 
     ]
 
-await Product.insertMany(products)
-console.log("Created products!")
+  await Product.insertMany(products)
+  console.log("Created products!")
 }
 const run = async () => {
-await main()
-db.close()
+  await main()
+  db.close()
 }
 
 run()

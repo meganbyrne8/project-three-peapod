@@ -1,0 +1,66 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.drop-down {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid blue;
+}
+
+.shop {
+  padding-left: 40px;
+}
+
+.guest-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.guest {
+  margin-top:2px;
+}
+
+.person {
+  font-size: 30px;
+}
+
+.logo {
+  height: 15vh;
+  width: 17vw;
+}
+
+.arrow {
+  border: solid #4d6e22;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.search {
+  padding: 0px 200px;
+}
+
+.input {
+  width: 20vw;
+  height: 7vh;
+  background-image: url(./glass.png);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  left: 80px;
+}
+
+.input::placeholder {
+  font-size: 15px;
+}

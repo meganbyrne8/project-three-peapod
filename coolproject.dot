@@ -1,0 +1,15 @@
+digraph frontend {
+size ="4,4";
+App [shape=box];
+App -> setState[weight=8];
+App -> execute;
+App -> Passes Props [style=dotted];
+App -> cleanup;
+execute -> { make_string; printf}
+Makestring -> make_string;
+edge [color=red]; // so is this
+App -> printf [style=bold,label="GET"];
+make_string [label="make a\nstring"];
+node [shape=box,style=filled,color=".7 .3 1.0"];
+execute -> compare;
+}
