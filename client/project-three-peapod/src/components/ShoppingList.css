@@ -1,0 +1,26 @@
+.h1 {
+    text-align: center;
+}
+
+.create-button {
+    background-color: white;
+    border: 1px solid #ddd;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.1px;
+  }
+
+ .create-a-list h2 {
+    
+    padding-left: 40%;
+    padding-right: 40%;
+     
+ }
+
+ .create-a-list p {
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    flex-wrap: wrap;
+ }

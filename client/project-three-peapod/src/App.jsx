@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { verifyUser } from "./services/user";
 import Home from "./components/Home"
+import ShoppingList from "./components/ShoppingList"
 import ProductsContainer from "./components/ProductsContainer";
 import Product from "./components/Product";
 import ProductEdit from "./components/ProductEdit";
@@ -83,6 +84,7 @@ export default class App extends Component {
                 />
               )}
             />
+            <ShoppingList />
           </Switch>
         </div>
       </>
