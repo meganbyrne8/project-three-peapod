@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: row;
     justify-items: center;
-   justify-content: space-around;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
     color: black;
 
 }
@@ -30,6 +31,7 @@
 }
 
 .legal-list {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -38,10 +40,12 @@
    
 } 
 .legal-term {
+    font-family: 'Roboto', sans-serif;
     padding-right: 30px;
 }
 
 .copyright {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     list-style: none;

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import { verifyUser } from "./services/user";
+import Home from "./components/Home"
+import ShoppingList from "./components/ShoppingList"
 import ProductsContainer from "./components/ProductsContainer";
 import Product from "./components/Product";
 import ProductEdit from "./components/ProductEdit";
@@ -10,7 +12,8 @@ import SignUp from "./components/SignUp";
 import SignOut from "./components/SignOut";
 import "./App.css";
 import Footer from "./components/shared/Footer";
-import LandingNav from "./components/shared/navigation/LandingNav";
+import Nav from "./components/shared/navigation/Nav";
+
 
 import SideNavContainer from './components/SideNav/SideNavContainer'
 import BrowseAisles from "./components/BrowseAisles";
@@ -52,9 +55,10 @@ export default class App extends Component {
       <>
         <div>
           <Switch>
-            {/* <Route exact path="/" render={() => <Home user={user} />} /> */}
+            <Route exact path="/" render={() => <Home user={user} />} />
             <Route exact path="/" render={() => <SideNavContainer />} />
             <Route exact path="/" render={() => <BrowseAisles />} />
+
             <Route exact path="/products">
               <ProductsContainer />
               {isLoaded && !user ? (
@@ -63,6 +67,7 @@ export default class App extends Component {
                   <ProductCreate user={user} />
                 )}
             </Route>
+            <Route exact path="/products" render={() => <Nav user={user} />} />
             <Route exact path="/product/:id" component={Product}></Route>
             <Route exact path="/products/:id/edit" component={ProductEdit} />
             <Route
@@ -84,6 +89,7 @@ export default class App extends Component {
                 />
               )}
             />
+            <ShoppingList />
           </Switch>
         </div>
       </>

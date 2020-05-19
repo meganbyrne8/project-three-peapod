@@ -6,7 +6,7 @@ function Cart() {
   return (
     <div className="shopping-cart">
       <p className="price">$0.00</p>
-     <span className="icon"><AiOutlineShoppingCart/></span> 
+      <span className="icon"><AiOutlineShoppingCart /></span>
     </div>
   );
 }
