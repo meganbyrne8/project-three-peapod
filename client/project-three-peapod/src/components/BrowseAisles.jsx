@@ -18,10 +18,11 @@ class BrowseAisles extends Component {
   }
 
   render() {
-    const populateAisles = this.state.products.map((product, index) => (
+    const populateAisles = this.state.aisles.map((product, index) => (
       <AisleCard
         _id={product._id}
-        title={product.title}
+        // title={product.title}
+        aisle={product.aisle}
         image={product.image}
         key={index}
       />
