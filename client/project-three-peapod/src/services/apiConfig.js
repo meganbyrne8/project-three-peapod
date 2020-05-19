@@ -9,7 +9,7 @@ const getToken = () => {
 let apiUrl
 
 const apiUrls = {
-  // production: 
+  production: 'https://shielded-garden-19227.herokuapp.com/api',
   development: 'http://localhost:3000/api'
 }
 

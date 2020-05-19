@@ -62,11 +62,11 @@ export default class App extends Component {
             <Route exact path="/" render={() => <BrowseAisles />} />
             <Route exact path="/browse" render={() => <BrowseHomePage />} />
             <Route exact path="/products">
-              <ProductsContainer />
+              
               {isLoaded && !user ? (
-                <Redirect to="/signUp" />
-              ) : (
-                  <ProductCreate user={user} />
+                <SignUp setUser={setUser} />
+              ) : ( <> <ProductsContainer /> 
+                  <ProductCreate user={user} /> </>
                 )}
             </Route>
             <Route exact path="/products" render={() => <Nav user={user} />} />
