@@ -4,7 +4,6 @@ import ProductCard from './ProductCard'
 import { Link } from 'react-router-dom'
 import "./ProductsContainer.css"
 
-
 export default class ProductsContainer extends Component {
   constructor() {
     super()
@@ -20,7 +19,7 @@ export default class ProductsContainer extends Component {
 
   render() {
     const populateProducts = this.state.products.map((product, index) => (
-      <ProductCard _id={product._id} title={product.title} image={product.image} description={product.description} key={index} />
+      <ProductCard _id={product._id} title={product.title} image={product.image} description={product.description} price={product.price} key={index} />
     ))
 
 
