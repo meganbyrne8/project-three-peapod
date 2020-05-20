@@ -2,7 +2,12 @@ import React from 'react'
 import './Home.css'
 import Footer from './shared/Footer'
 import peapodLogo from "./shared/peapod-Logo.png";
+// import { RiRadioButtonLine } from 'react-icons/ri'
 import { Link } from "react-router-dom";
+import zipbar from "./zipbar.png"
+import Buttonhome from "./Buttonhome.png"
+import Buttonbus from "./Buttonbus.png"
+
 
 const Home = () => {
   return (
@@ -41,58 +46,23 @@ const Home = () => {
         <p><strong>Delivery on your schedule.</strong></p>
       
 
-      <form>  
-        <div className="radio">
-
-        <input type="checkbox"/>
-        <label class="container">Home
-        <span class="circle"></span>
-        </label>
-
-        <input type="checkbox"/>
-        <label class="container">Business
-        <span class="checkmark"></span>
-        </label>
-
-
-
-          {/* <div>
-          <input 
-            type="radio" 
-            checked={"true"} 
-            className="radio-home" 
-            /> 
-          <label htmlFor="Home">
-            Home
-            <span className="checkmark"></span>
-          </label>
+<form>
+<div className="radio">
+          <div>
+          <img src={Buttonhome} alt="" className="buttonhome" />
           </div>
 
           <div>
-            <input 
-            type="radio" 
-            />
-            <label htmlFor="Business">
-             Business 
-             <span className="checkmark"></span>
-            </label> 
-             </div> */}
+          <img src={Buttonbus} alt="" className="buttonbus" />
+             </div>
         </div>
       </form>
 
-      <div className="search-plus-button">
-        <form className="search-home">
-            <input
-                className="search-input"
-                value="Enter Zip"
-                name="Search"
-                placeholder="Search"
-                type="text"
-                />
-                <Link to="/browse"><button><strong>Browse Now</strong></button></Link>
-        </form>
+      <div style={{backgroundImage: `url(${zipbar})`}}className="search-plus-button">
+
+          <Link to="/browse"><button><strong>Browse Now</strong></button></Link>
       </div>
-      </div>
+    </div>
     <Footer />
   </>
   )

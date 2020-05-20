@@ -85,7 +85,7 @@ const Footer = () =>
     <div className="copyright">
       <p>&copy;1990-2020 Peapod, LLC. All Rights Reserved</p>
     </div>
-
+<br/>
 </>
 
 export default Footer
