@@ -4,8 +4,8 @@ import { signUp, signIn } from "../services/user";
 import "./SignUp.css";
 
 class SignUp extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       username: "",
@@ -64,7 +64,7 @@ class SignUp extends Component {
 
   render() {
     const { email, username, password, passwordConfirmation } = this.state;
-
+    console.log(this.props)
     return (
       <div className="form-container">
         <h3>Create Account</h3>

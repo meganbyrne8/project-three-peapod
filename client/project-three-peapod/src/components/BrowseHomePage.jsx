@@ -1,24 +1,28 @@
 import React, { Component } from 'react'
 import Layout from './shared/Layout'
 import SideNavContainer from './SideNav/SideNavContainer'
+import BrowseAisles from './BrowseAisles'
 
 class BrowseHomePage extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
-
+            aisles: [],
         }
     }
 
     render() {
         return (
-            <Layout>
+            // <Layout>
+            <>
                 <SideNavContainer />
-                <h1>
-                    Hello World
-                </h1>
-            </Layout>
+
+
+
+                <BrowseAisles />
+            </>
+            // </Layout>
         )
     }
 }

@@ -50,23 +50,25 @@ export default class App extends Component {
     // const { user } = this.state
     const { setUser, clearUser } = this;
     const { user, isLoaded } = this.state;
-
+    console.log(this)
     return (
       <>
         <div>
           <Switch>
             <Route exact path="/" render={() => <Home user={user} />} />
+            <Route exact path="/" render={() => <SignIn />} />
+            <Route exact path="/" render={() => <BrowseHomePage />} />
             <Route exact path="/" render={() => <SideNavContainer />} />
             <Route exact path="/" render={() => <BrowseAisles />} />
             <Route exact path="/browse" render={() => <BrowseHomePage />} />
-            <Route exact path="/products">
-              <ProductsContainer />
-              {isLoaded && !user ? (
-                <Redirect to="/signUp" />
-              ) : (
-                  <ProductCreate user={user} />
-                )}
-            </Route>
+            <Route exact path="/products" render={(props) => 
+              
+              (isLoaded && !user ? (
+                <SignUp setUser={setUser} history={props.history}/>
+              ) : ( <> <ProductsContainer /> 
+                  <ProductCreate user={user} /> </>
+                )) } />
+            
             <Route exact path="/products" render={() => <Nav user={user} />} />
             <Route exact path="/product/:id" component={Product}></Route>
             <Route exact path="/products/:id/edit" component={ProductEdit} />
@@ -77,7 +79,7 @@ export default class App extends Component {
                 <SignIn setUser={setUser} history={props.history} />
               )}
             />
-            <Route exact path="/signUp" component={SignUp} />
+            <Route exact path="/signUp" render={(props) => <SignUp setUser={setUser} history={props.history}/>} />
             <Route
               exact
               path="/signOut"

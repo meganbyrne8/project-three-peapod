@@ -18,9 +18,9 @@ class Product extends Component {
     render() {
         return (
             <div>
-                <img src={this.props.image} />
+                <img src={this.props.image} alt="" />
                 <Link to={this.state.url}>
-                    <h1>{this.props.title}</h1>
+                    <h1>{this.props.aisle}</h1>
                 </Link>
             </div>
         )

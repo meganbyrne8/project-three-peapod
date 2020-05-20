@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
+import Chat from "./Chat"
 import Nav from "./navigation/Nav";
 import SecondayNav from "./navigation/SecondaryNav"
 
@@ -11,6 +12,7 @@ function Layout(props) {
       <div className="samplediv">
     {props.children}
       </div>
+      <Chat />
       <Footer />
     </div>
   );
