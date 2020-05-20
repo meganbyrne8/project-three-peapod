@@ -46,37 +46,66 @@ export default class Product extends Component {
 
     return (
       <Layout>
-        <div className="main-info-div">
-          <div>
-            <img src={this.state.image} className="thumbnail-image" />
+        <div className="entire-main-section">
+
+          <div className="x-axis-main-section">
+            <div className="main-info-div">
+              <div className="main-info-thumbnail">
+                <img src={this.state.image} />
+              </div>
+              <div className="stack-icons-info">
+                <div className="icons-div">
+                  <img src={ShoppingList} className="shopping-icon" />
+                  <div className="info-div-sub">
+                    <h2>{this.state.title}</h2>
+                    <img src={Rating} className="ratings-icon" />
+                  </div >
+                  <img src={Small_Chat} className="small_chat-icon" />
+                </div>
+              </div>
+            </div>
+            <div className="price-button-div-item">
+              <span className="price-lower-item">${this.props.price}</span>
+              <button className="add-to-cart-item">Add To Cart</button>
+            </div>
+            <div className="edit-delete-div">
+              <Link to={`/products/${this.state._id}/edit`} className="edit-link">Edit</Link>
+              <button className="delete-button" onClick={() => deleteProduct(this.state._id)}>Delete</button>
+            </div>
+            <div className="nutrition-div">
+              <div className="nutrition-recipe-banner">
+                <img src={nutrition_reviews} />
+              </div>
+              <div className="info-for-nutrition">
+                Some more text around this div
           </div>
-          <div className="stack-icons-info">
-            <div className="icons-div">
-              <img src={ShoppingList} className="shopping-icon" />
-              <div className="info-div-sub">
-                <h2>{this.state.title}</h2>
-                <img src={Rating} className="ratings-icon" />
-              </div >
-              <img src={Small_Chat} className="small_chat-icon" />
             </div>
           </div>
-          <div className="suggestions-div">
-            <h4>You Might Like</h4>
+
+
+          <div className="y-axis-main-section">
+            <div className="suggestions-div">
+              <div className="suggestins-div-title">
+                <h4>You Might Like</h4>
+              </div>
+              <div className="listed-suggestions">
+                <div className="single-main-info-div">
+                  <div className="single-suggested-image-div">
+                    Image here
+                </div>
+                  <div className="single-suggested-info-div">
+                    Weight, title here
+                </div>
+                </div>
+                <div className="single-suggested-button-price-div">
+                  price
+                  <button className="single-suggested-add-button">Add to Cart</button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="price-button-div-item">
-          <span className="price-lower-item">${this.props.price}</span>
-          <button className="add-to-cart-item">Add To Cart</button>
-        </div>
-        <div className="edit-delete-div">
-          <Link to={`/products/${this.state._id}/edit`} className="edit-link">Edit</Link>
-          <button className="delete-button" onClick={() => deleteProduct(this.state._id)}>Delete</button>
-        </div>
-        <div className="nutrition-div">
-          <img src={nutrition_reviews} />
-          <div>
-            Some more text around this div
-          </div>
+
+
         </div>
       </Layout>
     )

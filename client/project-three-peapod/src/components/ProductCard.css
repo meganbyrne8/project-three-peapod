@@ -13,12 +13,12 @@ p {
 }
 
 .product-cards img {
-  max-height: 200px;
+  max-height: 190px;
 }
 
 .thumbnail-image {
   height: 200px;
-  width: 200px;
+  width: 215px;
   border: 8px solid white;
   box-sizing: border-box;
   overflow: hidden;
