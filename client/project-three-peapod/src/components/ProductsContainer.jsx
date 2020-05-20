@@ -52,13 +52,14 @@ export default class ProductsContainer extends Component {
                 <h2>View All ></h2>
               </div>
             </div>
-            <div className="main-section">
-              <SideNavContainer />
-              <div className="product-gallery">{populateProducts}</div>
+            <div className="entire-middle-section">
+              <div className="side-nav-section">
+                <SideNavContainer />
+              </div>
+              <div className="main-section">
+                <div className="product-gallery">{populateProducts}</div>
+              </div>
             </div>
-          </div>
-          <div className="add-button">
-            <Link to="/products">ADD</Link>
           </div>
         </div>
       </Layout>
