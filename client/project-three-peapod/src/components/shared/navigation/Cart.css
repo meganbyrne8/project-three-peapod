@@ -1,20 +1,24 @@
 .shopping-cart {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
-  background-color: #58782C;
+  background-color: #577926;
   color: white;
   border-radius: 10px;
-  width: 120px;
-  height:40px;
+  width: 8rem;
+  height:50px;
 }
 
 .icon{
   font-size: 25px;
   text-align: center;
   margin: 0 auto;
-  padding-top: 10px;
+  padding-right: 10px;
+
 }
 
 .price{
-  padding-left:15px;
+  padding-left:25px;
+  font-size: 16px;
 }

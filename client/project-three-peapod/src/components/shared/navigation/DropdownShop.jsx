@@ -8,6 +8,7 @@ class Dropdown extends Component {
       open: false,
       selection: [],
     };
+    // console.log("user", props.user);
   }
 
   toggle() {
@@ -18,23 +19,25 @@ class Dropdown extends Component {
 
   render() {
     return (
-      <div className="dd-dropdown">
+      <div className="browse-dropdown">
         <div
           tabIndex={0}
-          className="dd-headers"
+          className="dropdown-headers"
           role="button"
           onClick={() => this.toggle(!this.state.open)}
         >
-          <div className="dd_header_name">
-            <p className="propsName">
-              Shop<i className="arrow down"></i>
+          <div className="">
+            <p className="cat-name">
+              My Shop<i className="arrow down"></i>
             </p>
-            {/* <p className="propsName">{this.props.state.name} OH YEA</p> */}
           </div>
         </div>
         {this.state.open && (
-          <ul>Map Goes Here</ul>
-          //add a map here  inside the UL
+          <div className="dropdown">
+            <ul>
+              <li>Specials</li>
+            </ul>
+          </div>
         )}
       </div>
     );
