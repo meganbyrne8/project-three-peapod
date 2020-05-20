@@ -8,6 +8,7 @@ import DropdownBrowse from "./DropdownBrowse";
 import { getProducts } from "../../../services/product";
 import Suggestions from "./Suggestions";
 
+
 class Nav extends Component {
   constructor(props) {
     super(props);
