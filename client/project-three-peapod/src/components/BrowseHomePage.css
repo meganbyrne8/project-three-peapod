@@ -1,0 +1,43 @@
+.aisles-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 10px solid yellow; */
+    padding: 5px;
+    width: 100%;
+}
+
+.aisles-container img{
+    height: 290px;
+    width: 250px;
+    /* border: 1px solid purple; */
+
+}
+
+.aisles-container h3{
+    text-transform: uppercase;
+    /* border: 1px solid blue; */
+    text-align: center;
+    width: 250px;
+}
+
+.aisles-container a{
+    text-decoration: none;
+    /* border: 1px solid red; */
+    color: black;
+}
+
+.produce, .meat, .seafood, .meal-kits, .deli, .dairy, .beverages, .bread{
+    /* border: 1px solid red; */
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 15px;
+    margin: 10px 40px;
+
+    /* box-shadow: 0px 0px 3px 1px #cecece; */
+}
+
+
+

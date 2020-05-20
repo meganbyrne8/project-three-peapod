@@ -20,7 +20,9 @@ class SideNavAisleCard extends Component {
         return (
             <div className='aisle-card'>
                 <Link to={this.state.url} className='p-title'>
-                    <p >{this.props.title}</p>
+                    <ul>
+                        <li >{this.props.title}</li>
+                    </ul>
                 </Link>
             </div>
         )

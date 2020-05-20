@@ -1,7 +1,17 @@
 import React, { Component } from 'react'
 import { getProducts } from '../../services/product'
 import SideNavAisleCard from './SideNavAisleCard'
+
+import { Link } from "react-router-dom";
 import './SideNavProduce.css'
+import Beverages from '../BrowseAislesImages/beverages.jpg'
+import Bread from '../BrowseAislesImages/bread.jpg'
+import Dairy from '../BrowseAislesImages/dairy.jpg'
+import Deli from '../BrowseAislesImages/deli.jpg'
+import Kits from '../BrowseAislesImages/meal-kits.jpg'
+import Meat from '../BrowseAislesImages/meat.jpg'
+import Produce from '../BrowseAislesImages/produce.jpg'
+import Seafood from '../BrowseAislesImages/seafood.jpg'
 
 class SideNavProduce extends Component {
     constructor(props) {
@@ -39,17 +49,66 @@ class SideNavProduce extends Component {
                     onClick={() => this.toggle(!this.state.open)}
                 >
                     <div className="dd_header_name">
-                        <p className="propsName">
-                            Products<i className="arrow down"></i>
-                        </p>
+                        <ul>
+                            <li className="propsName">
+                                Products<i className="arrow down"></i>
+                            </li>
+                        </ul>
                         {/* <p className="propsName">{this.props.state.name} OH YEA</p> */}
                     </div>
                 </div>
                 {this.state.open && (
                     <ul>
-                        <li className='arrivals'>New Arrivals</li>
-                        <li className='organic'>Organic</li>
-                        <li classnamne='produce-list'>{populateAisles}</li>
+                        <li className="arrivals">New Arrivals</li>
+                        <li className="organic">Organic</li>
+                        <Link to='/products'>
+                            <div className="produce">
+                                <img src={Produce} alt="" />
+                                <h3>Produce</h3>
+                            </div>
+                        </Link>
+                        <Link>
+                            <div className="meat">
+                                <img src={Meat} alt="" />
+                                <h3>Meat</h3>
+                            </div>
+                        </Link>
+                        <Link>
+                            <div className="seafood">
+                                <img src={Seafood} alt="" />
+                                <h3>Seafood</h3>
+                            </div>
+                        </Link>
+                        <Link>
+                            <div className="meal-kits">
+                                <img src={Kits} alt="" />
+                                <h3>Meal Kits</h3>
+                            </div>
+                        </Link>
+                        <Link>
+                            <div className="deli">
+                                <img src={Deli} alt="" />
+                                <h3>Deli</h3>
+                            </div>
+                        </Link>
+                        <Link>
+                            <div className="dairy">
+                                <img src={Dairy} alt="" />
+                                <h3>Dairy</h3>
+                            </div>
+                        </Link>
+                        <Link>
+                            <div className="beverages">
+                                <img src={Beverages} alt="" />
+                                <h3>Beverages</h3>
+                            </div>
+                        </Link>
+                        <Link>
+                            <div className="bread">
+                                <img src={Bread} alt="" />
+                                <h3>Bread & Baking</h3>
+                            </div>
+                        </Link>
                     </ul>
                     //add a map here  inside the UL
                 )}
