@@ -5,6 +5,7 @@ import Layout from "./shared/Layout"
 import ShoppingList from "./ProductItemImages/ShoppingList.png"
 import Rating from "./ProductItemImages/Rating.png"
 import Small_Chat from "./ProductItemImages/Small_Chat.png"
+import nutrition_reviews from "./ProductItemImages/nutrition_reviews.png"
 import "./Product.css"
 
 export default class Product extends Component {
@@ -59,16 +60,24 @@ export default class Product extends Component {
               <img src={Small_Chat} className="small_chat-icon" />
             </div>
           </div>
+          <div className="suggestions-div">
+            <h4>You Might Like</h4>
+          </div>
         </div>
-        <div className="price-button-div">
-          <span className="price-lower">${this.props.price}</span>
-          <button className="add-to-cart">Add To Cart</button>
+        <div className="price-button-div-item">
+          <span className="price-lower-item">${this.props.price}</span>
+          <button className="add-to-cart-item">Add To Cart</button>
         </div>
         <div className="edit-delete-div">
           <Link to={`/products/${this.state._id}/edit`} className="edit-link">Edit</Link>
           <button className="delete-button" onClick={() => deleteProduct(this.state._id)}>Delete</button>
         </div>
-        <div>Nutrition will go here</div>
+        <div className="nutrition-div">
+          <img src={nutrition_reviews} />
+          <div>
+            Some more text around this div
+          </div>
+        </div>
       </Layout>
     )
   }

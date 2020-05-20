@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import "./ProductsContainer.css";
 import Layout from "./shared/Layout";
 import SideNavContainer from "./SideNav/SideNavContainer";
+import BackMenuButton from "./ProductItemImages/BackMenuButton.png"
 
 export default class ProductsContainer extends Component {
   constructor() {
@@ -35,9 +36,11 @@ export default class ProductsContainer extends Component {
       <Layout>
         <div className="products-container">
           <header className="component-nav">
-            Produce
             <div className="close-out-button">
-              <span>&lt;</span>
+              <img src={BackMenuButton} className="back-button" />
+            </div>
+            <div className="section-title">
+              <h3>Produce</h3>
             </div>
           </header>
           <div className="containter-div">
@@ -49,8 +52,10 @@ export default class ProductsContainer extends Component {
                 <h2>View All ></h2>
               </div>
             </div>
-            <SideNavContainer/>
-            <div className="product-gallery">{populateProducts}</div>
+            <div className="main-section">
+              <SideNavContainer />
+              <div className="product-gallery">{populateProducts}</div>
+            </div>
           </div>
           <div className="add-button">
             <Link to="/products">ADD</Link>

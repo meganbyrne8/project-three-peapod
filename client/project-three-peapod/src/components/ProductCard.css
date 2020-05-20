@@ -27,11 +27,12 @@ p {
 .price-button-div {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   font-weight: 600;
   font-size: 12px;
   width: 100%;
+  padding: 20px 20px 0 20px;
 }
 
 .price-button-div button {
