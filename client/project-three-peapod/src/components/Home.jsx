@@ -11,45 +11,77 @@ const Home = () => {
       <img src={peapodLogo} alt="" className="peapod" />
       <div className="account">
         <p>
-          Already have an account?
+          <strong>Already have an account?</strong>
           <span className="sign">
             {" "}
-            <Link to="/signIn">Sign In</Link>
+            <Link to="/signIn"><strong>Sign In</strong></Link>
           </span>
         </p>
       </div>
     </div>
       <div className="cover">
-        <h2>Shop for thousands of grocery items for your home or business</h2>
+
+        <div className="shop">
+        <h2>Shop for thousands</h2>
+        </div>
+
+        <div className="of">
+        <h2>of grocery items for</h2>
+        </div>
+
+        <div className="your">
+        <h2>your home or</h2>
+        </div>
+
+        <div className="bus">
+          <h2>business</h2>
+        </div>
+
         <h3>Grocery shop from anywhere.</h3>
-        <p>Delivery on your schedule.</p>
+        <p><strong>Delivery on your schedule.</strong></p>
       
 
-      <form>
+      <form>  
         <div className="radio">
-          <label>
-            <input 
+
+        <input type="checkbox"/>
+        <label class="container">Home
+        <span class="circle"></span>
+        </label>
+
+        <input type="checkbox"/>
+        <label class="container">Business
+        <span class="checkmark"></span>
+        </label>
+
+
+
+          {/* <div>
+          <input 
             type="radio" 
-            value="Home" 
-            name="Home" 
             checked={"true"} 
             className="radio-home" 
             /> 
+          <label htmlFor="Home">
             Home
+            <span className="checkmark"></span>
           </label>
-            <label>
+          </div>
+
+          <div>
             <input 
             type="radio" 
-            value="Business" 
-            name="Business" 
-            checked={""}
-            className="radio-business"
             />
-            Business 
-          </label>
+            <label htmlFor="Business">
+             Business 
+             <span className="checkmark"></span>
+            </label> 
+             </div> */}
         </div>
       </form>
-      <form className="search-home">
+
+      <div className="search-plus-button">
+        <form className="search-home">
             <input
                 className="search-input"
                 value="Enter Zip"
@@ -59,7 +91,8 @@ const Home = () => {
                 />
                 <Link to="/browse"><button><strong>Browse Now</strong></button></Link>
         </form>
-        </div>
+      </div>
+      </div>
     <Footer />
   </>
   )
