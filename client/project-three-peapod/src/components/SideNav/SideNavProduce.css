@@ -1,6 +1,6 @@
 .arrivals{
     border:1px solid black;
-    max-width: 100px;
+    max-width: 190px;
     list-style: none;
     padding-bottom: 15px;
     padding-top: 15px;
@@ -8,9 +8,15 @@
 
 .organic{
     border:1px solid black;
-    max-width: 100px;
+    max-width: 190px;
     list-style: none;
     padding-bottom: 15px;
     padding-top: 15px;
 }
 
+
+
+.produce-list{
+    padding: 0px;
+    margin: 0px;
+}

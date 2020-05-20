@@ -3,7 +3,7 @@ import { getProducts } from '../../services/product'
 import SideNavAisleCard from './SideNavAisleCard'
 import SideNavProduce from './SideNavProduce'
 import SideNavAllAisles from './SideNavAllAisles'
-
+import './SideNavContainer.css'
 class SideNavContainer extends Component {
     constructor(props) {
         super(props)
@@ -32,7 +32,7 @@ class SideNavContainer extends Component {
         ))
 
         return (
-            <div>
+            <div className="SideNavContainer">
                 <SideNavAllAisles />
                 <SideNavProduce />
             </div>

@@ -39,9 +39,11 @@ class SideNavAllAisles extends Component {
                     onClick={() => this.toggle(!this.state.open)}
                 >
                     <div className="dd_header_name">
-                        <p className="propsName">
-                            All Aisles<i className="arrow down"></i>
-                        </p>
+                        <ul>
+                            <li className="propsName">
+                                All Aisles<i className="arrow down"></i>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 {this.state.open && (
