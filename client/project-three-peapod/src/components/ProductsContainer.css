@@ -12,6 +12,7 @@
   background-color: #2D2D2D;
   font-weight: bolder;
   font-size: 18px;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
@@ -37,6 +38,7 @@
   justify-content: space-between;
   width: 85%;
   font-size: 12px;
+  font-family: 'Roboto', sans-serif;
   font-weight: bolder;
   margin-left: 188px;
  }
@@ -60,7 +62,7 @@
  .product-gallery {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-around; */
     flex-wrap: wrap;
     width: 95%;
  }
