@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './ProductCreate.css'
-// import Layout from './shared/Layout'
+import Layout from './shared/Layout'
 import { Redirect } from 'react-router-dom'
 import { createProduct } from '../services/product'
 
@@ -37,7 +37,6 @@ class ProductCreate extends Component {
   handleSubmit = async (event) => {
     event.preventDefault()
     const created = await createProduct(this.state.product)
-    console.log("DRINKS", created)
     this.setState({ created })
   }
 
@@ -48,7 +47,6 @@ class ProductCreate extends Component {
       return <Redirect to={`/products`} />
     }
     return (
-      // <Layout user={this.props.user}>
       <form className="create-form">
 
         <input
@@ -116,10 +114,8 @@ class ProductCreate extends Component {
           required
           onChange={this.handleChange}
         />
-
         <button type='submit' className="submit-button" onClick={this.handleSubmit}>Submit</button>
       </form>
-      // </Layout>
     )
   }
 }
