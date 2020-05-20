@@ -7,7 +7,7 @@ import Dropdown from "./DropdownShop";
 import DropdownBrowse from "./DropdownBrowse";
 import { getProducts } from "../../../services/product";
 import Suggestions from "./Suggestions";
-
+import { Link } from "react-router-dom";
 
 class Nav extends Component {
   constructor(props) {
@@ -38,7 +38,11 @@ class Nav extends Component {
   };
 
   render() {
-    console.log("Are..", this.state.query);
+    console.log("Are..", this.props);
+    // if(this.props.name) {
+
+    // }
+
     return (
       <div className="nav">
         <div>
@@ -65,6 +69,12 @@ class Nav extends Component {
           <form>
             <Suggestions />
           </form>
+        </div>
+        <div className="sign-out">
+          <p>
+            All set? 
+            <Link to="/signOut"> Sign Out </Link>
+          </p>
         </div>
         <div className="guest-container">
           <span className="person">
