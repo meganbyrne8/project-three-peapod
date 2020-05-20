@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import "./DropdownBrowse.css";
+import { getProducts } from "../../../services/product";
 
 class DropdownBrowse extends Component {
   constructor(props) {
@@ -8,7 +10,7 @@ class DropdownBrowse extends Component {
       open: false,
       selection: [],
     };
-    console.log("user",props.user);
+    // console.log("user", props.user);
   }
 
   toggle() {
@@ -17,28 +19,29 @@ class DropdownBrowse extends Component {
     });
   }
 
-
-  
-
   render() {
     return (
-      <div className="dd-dropdown">
+      <div className="browse-dropdown">
         <div
           tabIndex={0}
-          className="dd-headers"
+          className="dropdown-headers"
           role="button"
           onClick={() => this.toggle(!this.state.open)}
         >
-          <div className="dd_header_name">
-            <p className="propsName">
+          <div className="">
+            <p className="cat-name">
               Browse Aisle<i className="arrow down"></i>
             </p>
-            
           </div>
         </div>
         {this.state.open && (
-          <ul>{this.props.user}</ul>
-          //add a map here  inside the UL
+          <div className="dropdown">
+            <ul>
+              <li>New Arrivals</li>
+              <li>Organic</li>
+              <li>{this.props.aisles}</li>
+            </ul>
+          </div>
         )}
       </div>
     );
