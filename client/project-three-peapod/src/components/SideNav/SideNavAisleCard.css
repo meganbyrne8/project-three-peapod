@@ -12,3 +12,26 @@
    
 }
 
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    
+ 
+
+    .aisle-card {
+        border: 1px solid black;
+        max-width: 375px;
+        padding: 10px 0px;
+    }
+
+    .aisle-card li {
+        list-style: none;
+       
+    }
+
+    
+    
+    
+}
+

@@ -1,3 +1,13 @@
-.SideNavContainer{
-    /* border:2px solid limegreen; */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .SideNavContainer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-decoration: none;
+        
+    }
+    
 }

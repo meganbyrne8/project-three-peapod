@@ -20,10 +20,13 @@
     text-align: center;
     width: 250px;
 }
-
+.aisles-container li{
+    list-style: none;
+}
 .aisles-container a{
     text-decoration: none;
     /* border: 1px solid red; */
+    
     color: black;
 }
 
@@ -40,5 +43,23 @@
     /* box-shadow: 0px 0px 3px 1px #cecece; */
 }
 
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .entire-middle-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px 0px;
+    }
+    .propsName, .aisle-card {
+        list-style: none;
+    }
+
+    
+    
+}
 
 
