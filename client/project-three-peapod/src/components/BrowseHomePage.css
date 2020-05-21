@@ -11,7 +11,7 @@
     height: 290px;
     width: 250px;
     /* border: 1px solid purple; */
-
+    object-fit: cover;
 }
 
 .aisles-container h3{
@@ -35,6 +35,7 @@
     flex-direction: column;
     padding: 10px 15px;
     margin: 10px 40px;
+    border: none;
 
     /* box-shadow: 0px 0px 3px 1px #cecece; */
 }
