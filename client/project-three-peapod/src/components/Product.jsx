@@ -69,7 +69,7 @@ export default class Product extends Component {
 
               <div className="stack-icons-info">
                 <div className="icons-div">
-                  <Link to="/home">
+                  <Link to="/home" className="shopping-icon-div">
                     <img src={ShoppingList} className="shopping-icon" />
                   </Link>
                   <div className="info-div-sub">
@@ -94,7 +94,7 @@ export default class Product extends Component {
 
             <div className="nutrition-div">
               <div className="nutrition-recipe-banner">
-                <img src={nutrition_reviews} />
+                <img src={nutrition_reviews} className="reviews-banner-img" />
               </div>
               <div className="nutrition-logo">
                 <img src={nutritionLogo} />
@@ -133,7 +133,7 @@ export default class Product extends Component {
                     </div>
                   </div>
                   <div className="substitute-checkbox">
-                    <img src={checkedBox} />
+                    <img src={checkedBox} className="substitute-checkbox-image" />
                     <p>If unavailable, substitute with this item</p>
                   </div>
                 </div>
