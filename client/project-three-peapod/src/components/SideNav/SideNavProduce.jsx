@@ -63,49 +63,49 @@ class SideNavProduce extends Component {
                         <li className="organic">Organic</li>
                         <Link to='/products'>
                             <div className="produce">
-                                <img src={Produce} alt="" />
+                                <img src={Produce} alt="" className="produce-class" />
                                 <h3>Produce</h3>
                             </div>
                         </Link>
                         <Link>
                             <div className="meat">
-                                <img src={Meat} alt="" />
+                                <img src={Meat} alt="" className="meat-class" />
                                 <h3>Meat</h3>
                             </div>
                         </Link>
                         <Link>
                             <div className="seafood">
-                                <img src={Seafood} alt="" />
+                                <img src={Seafood} alt="" className="seafood-class" />
                                 <h3>Seafood</h3>
                             </div>
                         </Link>
                         <Link>
                             <div className="meal-kits">
-                                <img src={Kits} alt="" />
+                                <img src={Kits} alt="" className="kits-class" />
                                 <h3>Meal Kits</h3>
                             </div>
                         </Link>
                         <Link>
                             <div className="deli">
-                                <img src={Deli} alt="" />
+                                <img src={Deli} alt="" className="deli-class" />
                                 <h3>Deli</h3>
                             </div>
                         </Link>
                         <Link>
                             <div className="dairy">
-                                <img src={Dairy} alt="" />
+                                <img src={Dairy} alt="" className="dairy-class" />
                                 <h3>Dairy</h3>
                             </div>
                         </Link>
                         <Link>
                             <div className="beverages">
-                                <img src={Beverages} alt="" />
+                                <img src={Beverages} alt="" className="beverages-class" />
                                 <h3>Beverages</h3>
                             </div>
                         </Link>
                         <Link>
                             <div className="bread">
-                                <img src={Bread} alt="" />
+                                <img src={Bread} alt="" className="bread-class" />
                                 <h3>Bread & Baking</h3>
                             </div>
                         </Link>
