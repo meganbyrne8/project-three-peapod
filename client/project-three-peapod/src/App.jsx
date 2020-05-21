@@ -61,14 +61,13 @@ export default class App extends Component {
             <Route exact path="/" render={() => <SideNavContainer />} />
             <Route exact path="/" render={() => <BrowseAisles />} />
             <Route exact path="/browse" render={() => <BrowseHomePage />} />
-            <Route exact path="/products" render={(props) => 
-              
+            <Route exact path="/products" render={(props) =>
+
               (isLoaded && !user ? (
-                <SignUp setUser={setUser} history={props.history}/>
-              ) : ( <> <ProductsContainer /> 
-                  <ProductCreate user={user} /> </>
-                )) } />
-            
+                <SignUp setUser={setUser} history={props.history} />
+              ) : (<> <ProductsContainer user={user} />  </>
+                ))} />
+            <Route exact path="/products/create" render={() => <ProductCreate user={user} />} />
             <Route exact path="/products" render={() => <Nav user={user} />} />
             <Route exact path="/product/:id" component={Product}></Route>
             <Route exact path="/products/:id/edit" component={ProductEdit} />
@@ -79,7 +78,7 @@ export default class App extends Component {
                 <SignIn setUser={setUser} history={props.history} />
               )}
             />
-            <Route exact path="/signUp" render={(props) => <SignUp setUser={setUser} history={props.history}/>} />
+            <Route exact path="/signUp" render={(props) => <SignUp setUser={setUser} history={props.history} />} />
             <Route
               exact
               path="/signOut"

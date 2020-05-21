@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { getProduct, deleteProduct } from '../services/product'
 import Layout from "./shared/Layout"
+import BackMenuButton from "./ProductItemImages/BackMenuButton.png"
 import ShoppingList from "./ProductItemImages/ShoppingList.png"
 import Rating from "./ProductItemImages/Rating.png"
 import Small_Chat from "./ProductItemImages/Small_Chat.png"
@@ -49,6 +50,15 @@ export default class Product extends Component {
 
     return (
       <Layout>
+        <header className="component-nav">
+          <div className="close-out-button">
+            <img src={BackMenuButton} className="back-button" />
+          </div>
+          <div className="section-title">
+            <h3>Item Detail</h3>
+          </div>
+        </header>
+
         <div className="entire-main-section">
 
           <div className="x-axis-main-section">
@@ -59,26 +69,27 @@ export default class Product extends Component {
 
               <div className="stack-icons-info">
                 <div className="icons-div">
-                  <img src={ShoppingList} className="shopping-icon" />
+                  <Link to="/home">
+                    <img src={ShoppingList} className="shopping-icon" />
+                  </Link>
                   <div className="info-div-sub">
                     <h2>{this.state.title}</h2>
-                    <img src={Rating} className="ratings-icon" />
+                    <div className="info-div-stars">
+                      <img src={Rating} className="ratings-icon" />
+                      <p>(0 Ratings)</p>
+                    </div>
                   </div >
                   <img src={Small_Chat} className="small_chat-icon" />
                 </div>
               </div>
             </div>
+
             <div className="price-button-div-item">
               <div className="price-button-div-item-text">
                 <span className="price-lower-item">$ {this.state.price}</span>
                 <p>1.75 lb packaging | 0.46 / oz</p>
               </div>
               <img src={AddToCart} />
-            </div>
-
-            <div className="edit-delete-div">
-              <Link to={`/products/${this.state._id}/edit`} className="edit-link">Edit</Link>
-              <button className="delete-button" onClick={() => deleteProduct(this.state._id)}>Delete</button>
             </div>
 
             <div className="nutrition-div">
@@ -128,7 +139,10 @@ export default class Product extends Component {
                 </div>
               </div>
             </div>
-
+            <div className="edit-delete-div">
+              <Link to={`/products/${this.state._id}/edit`} className="edit-link">Edit</Link>
+              <button className="delete-button" onClick={() => deleteProduct(this.state._id)}>Delete</button>
+            </div>
           </div>
 
 
@@ -144,11 +158,12 @@ export default class Product extends Component {
                     <img src={tomatoesThumbnail} className="beefsteak-tomatoes-thumbnail" />
                   </div>
                   <div className="single-suggested-info-div">
-                    Weight, title here
-                </div>
+                    <p>1.75 lb pkg | $0.46 / oz</p>
+                    <h5>Tomatoes Beefsteak Value Pack</h5>
+                  </div>
                 </div>
                 <div className="single-suggested-button-price-div">
-                  <p>8.99</p>
+                  <p>$ 8.99</p>
                   <img src={AddToCart} className="singular-add-to-cart" />
                 </div>
               </div>
@@ -159,11 +174,12 @@ export default class Product extends Component {
                     <img src={tomatoesThumbnail} className="beefsteak-tomatoes-thumbnail" />
                   </div>
                   <div className="single-suggested-info-div">
-                    Weight, title here
-                </div>
+                    <p>1.75 lb pkg | $0.46 / oz</p>
+                    <h5>Tomatoes Beefsteak Value Pack</h5>
+                  </div>
                 </div>
                 <div className="single-suggested-button-price-div">
-                  <p>8.99</p>
+                  <p>$ 8.99</p>
                   <img src={AddToCart} className="singular-add-to-cart" />
                 </div>
               </div>
@@ -174,29 +190,16 @@ export default class Product extends Component {
                     <img src={tomatoesThumbnail} className="beefsteak-tomatoes-thumbnail" />
                   </div>
                   <div className="single-suggested-info-div">
-                    Weight, title here
-                </div>
+                    <p>1.75 lb pkg | $0.46 / oz</p>
+                    <h5>Tomatoes Beefsteak Value Pack</h5>
+                  </div>
                 </div>
                 <div className="single-suggested-button-price-div">
-                  <p>8.99</p>
+                  <p>$ 8.99</p>
                   <img src={AddToCart} className="singular-add-to-cart" />
                 </div>
               </div>
 
-              <div className="listed-suggestions">
-                <div className="single-main-info-div">
-                  <div className="single-suggested-image-div">
-                    <img src={tomatoesThumbnail} className="beefsteak-tomatoes-thumbnail" />
-                  </div>
-                  <div className="single-suggested-info-div">
-                    Weight, title here
-                </div>
-                </div>
-                <div className="single-suggested-button-price-div">
-                  <p>8.99</p>
-                  <img src={AddToCart} className="singular-add-to-cart" />
-                </div>
-              </div>
 
             </div>
           </div>

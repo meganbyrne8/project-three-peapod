@@ -49,6 +49,9 @@ export default class ProductsContainer extends Component {
                 <h2>Top Selling Produce on Sale</h2>
               </div>
               <div className="view-all">
+                <Link to="/products/create" className="plus-sign">
+                  <span>&#43;</span>
+                </Link>
                 <h2>View All ></h2>
               </div>
             </div>
