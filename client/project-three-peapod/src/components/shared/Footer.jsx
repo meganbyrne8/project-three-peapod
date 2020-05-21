@@ -63,16 +63,12 @@ const Footer = () =>
 </div>
 <br />
     <div className="social-icons">
-            <FaPinterestP
-            size="20px" />
-            <FaFacebookF 
-            size="20px" />
-            <FaInstagram 
-            size="25px" />
-            <FaTwitter 
-            size="25px" />
-            <FaYoutube 
-            size="25px" />
+            <FaPinterestP />
+            <FaFacebookF />
+            <FaInstagram />
+            <FaTwitter />
+            <FaYoutube />
+
     </div>
 
     <div className="legal">
