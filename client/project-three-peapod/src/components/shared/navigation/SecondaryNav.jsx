@@ -13,7 +13,7 @@ export default function SecondaryNav() {
           <li>Loaded Coupons</li>
         </Link>
         <Link>
-          <li>Pest Purchases</li>
+          <li>Past Purchases</li>
         </Link>
         <Link>
           <li> Order Genius</li>

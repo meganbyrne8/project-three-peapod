@@ -2,44 +2,86 @@
 .shopping-bar {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
   color: white;
   background-color: #2D2D2D;
   font-weight: bolder;
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
-  
-}
-
-.shopping-bar h3{
-   text-align:center;
+  font-family: 'Roboto', sans-serif; 
 }
 
 
 
-.h1 {
-    text-align: center;
+.back-button {
+   width: 45px;
+   height: 45px;
+
+ }
+
+.createNew {
+   border: 1px solid #f4f3f4;
+   background-color: #f5f5f5;
+   width: 300px;
+   margin-left: 0;
+   margin-top: 0px;
 }
 
-.create-button {
-    background-color: white;
-    border: 1px solid #ddd;
-    color: black;
+.createNew p{
+   font-family: 'Roboto', sans-serif;
+   font-size: 19px;
+   font-weight: bold;
+   color: #454545;
+   
+}
+.essentials {
+   padding-right: 30px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 10px;
+}
+.essentials-input {
+   height: 20px;
+   padding-top: 18px;
+   margin-left: 10px;
+   margin-bottom: 10px;
+
+}
+
+.create {
+   height: 40px;
+   width: 60px;
+   padding-left: 10px;
+   padding-top: 10px;
+}
+
+ .create-a-list h2 { 
+    display: flex;
+    justify-content: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.1px;
-  }
+    font-size: 22px;
+    color: #454545
+ }
 
- .create-a-list h2 {
-    
-    padding-left: 40%;
-    padding-right: 40%;
-     
+ .line {
+    width: 375px;
  }
 
  .create-a-list p {
-    padding-left: 20%;
-    padding-right: 20%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    color: #454545;
+    margin-top: -10px;
+ }
+
+ .create-a-list h4 {
+   display: flex;
+   justify-content: center;
+   padding-top: 20px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 19px;
+   color: #454545;
+   font-weight: normal;
+   margin-top: -20px
+    
  }
