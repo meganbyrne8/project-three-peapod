@@ -48,9 +48,8 @@
     .form-container-sign-in {
       display: flex;
       flex-direction: column;
-      width: 90vw;
-      height: 80vh;
-      margin: 5vh 0;
+      width: 100%;
+      margin: 10vh 0;
     }
     
     .form-container-sign-in  h3{
@@ -81,8 +80,9 @@
       width: 230px;
       height: 52px;
       margin: 0 auto;
-      color: rgb(255, 255, 255);
+      color: rgb(73, 126, 19);
       border: 2px solid rgb(73, 126, 19);
+      background-color: rgb(255,255,255);
       margin-top: 25px;
     }
 }

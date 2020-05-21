@@ -84,8 +84,9 @@
       width: 252px;
       height: 52px;
       margin: 0 auto;
-      color: rgb(255, 255, 255);
+      color: rgb(73, 126, 19);
       border: 2px solid rgb(73, 126, 19);
+      background-color: rgb(255,255,255);
       margin-top: 25px;
     }
     

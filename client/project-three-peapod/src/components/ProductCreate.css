@@ -10,11 +10,14 @@
   align-items: flex-start;
   width: 50%;
   margin: 0 auto;
-  border: 1px solid lightgray
 }
 
 .textarea-description {
-  margin: 0;
+  width: 42vw;
+  height: 6vh;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  
 }
 
 .button-div {
@@ -23,9 +26,64 @@
   padding: 5px;
 }
 
-.submit-button {
-  margin: 0 auto;
-  border-radius: 3px;
-  width: 15%;
-  padding: 8px;
+.input-name, .input-price, .input-image-link{
+  width: 42vw;
+  height: 6vh;
+  margin-bottom: 20px;
+  margin: 10px auto;
+
 }
+
+.submit-button {
+  font-size: 14px;
+  width: 152px;
+  height: 42px;
+  margin: 15px auto;
+  color: white;
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .header-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .create-form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .button-div {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+    }
+    
+    .input-name, .input-price,.textarea-description, .input-image-link{
+      width: 72vw;
+      height: 6vh;
+      margin-bottom: 20px;
+      margin: 10px auto;
+    
+    }
+    
+    .submit-button {
+      font-size: 14px;
+      width: 152px;
+      height: 42px;
+      margin: 15px auto;
+      color: rgb(73, 126, 19);
+      border: 2px solid rgb(73, 126, 19);
+      background-color: rgb(255,255,255);
+    }
+
+}
+
