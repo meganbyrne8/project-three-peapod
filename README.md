@@ -75,12 +75,12 @@ For our one week sprint, this project will meet a few goals, it will:
 * Create the shell for the hamburger menu on the browse aisles page for mobile
 * Create the shell for the Select Time Slot feature
 * Create the shell for the Delivery Zone feature
-* Create a basic search for users to be able to find items by name
+* Create a basic search for users to be able to find items by category
 * Create the shell for the Add To Cart button
 * Create the shell for the star rating on each item
 * Create the shell for the side bar, with at least one functioning link
 * Create the shell for the Shopping List feature
-* Create the shell for all users to create accounts without admin permissions.
+* Create the shell for all users to create accounts.
 
 ## Post-MVP 
 TK

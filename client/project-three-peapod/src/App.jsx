@@ -65,7 +65,7 @@ export default class App extends Component {
 
               (isLoaded && !user ? (
                 <SignUp setUser={setUser} history={props.history} />
-              ) : (<> <ProductsContainer user={user} />  </>
+              ) : (<> <ProductsContainer user={user} /> </>
                 ))} />
             <Route exact path="/products/create" render={() => <ProductCreate user={user} />} />
             <Route exact path="/products" render={() => <Nav user={user} />} />
