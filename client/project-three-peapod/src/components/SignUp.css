@@ -33,7 +33,7 @@
   width: 272px;
   height: 52px;
   margin: 0 auto;
-  color: rgb(73, 126, 19);
+  color: rgb(255, 255, 255);
   border: 2px solid rgb(73, 126, 19);
   margin-top: 25px;
 }
@@ -41,4 +41,57 @@
 .contain p {
   font-size: 12px;
   color: grey;
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      width: 85vw;
+      height: 80vh;
+      margin: 5vh auto;
+    }
+    
+    .form-container h3 {
+      font-size: 32px;
+      margin: 0 auto;
+      padding: 30px 0;
+    }
+    
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    
+    .form label {
+      font-size: 18px;
+    }
+    
+    .form input {
+      width: 32vw;
+      height: 6vh;
+      margin-bottom: 20px;
+    }
+    .continue {
+      font-size: 24px;
+      width: 252px;
+      height: 52px;
+      margin: 0 auto;
+      color: rgb(73, 126, 19);
+      border: 2px solid rgb(73, 126, 19);
+      background-color: rgb(255,255,255);
+      margin-top: 25px;
+    }
+    
+    .contain p {
+      font-size: 12px;
+      color: grey;
+    }
 }

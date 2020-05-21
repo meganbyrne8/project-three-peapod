@@ -1,5 +1,5 @@
 .cat-name {
-  width: 200px;
+  width: 170px;
   font-size: 25px;
 }
 .arrow {
@@ -19,7 +19,7 @@
   display: block;
   position: absolute;
   top: 80px;
-  width: 280px;
+  width: 250px;
   border: 1px solid #aaa;
   background-color: #fff;
   border-bottom-left-radius: 4px;
@@ -33,7 +33,7 @@
   font-size: 16px;
   text-decoration: none;
   list-style: none;
-  padding: 10px;
+  padding: 5px;
 }
 
 .dropdown li {

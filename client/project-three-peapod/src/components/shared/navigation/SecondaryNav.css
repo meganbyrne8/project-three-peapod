@@ -1,5 +1,6 @@
 .secondary-nav-container {
   display: flex;
+  align-items: center;
   flex-direction: row;
   background-color: #f5f5f5;
 }
@@ -8,7 +9,52 @@
   display: flex;
   flex-direction: row;
 }
-.secondary-ul a{
+
+.delivery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 130px;
+  height: 60px;
+  border: none;
+}
+
+.delivery li {
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 180px;
+  height: 60px;
+  border: none;
+}
+
+.time li {
+  width: none;
+  text-align: center;
+  padding: 0px;
+}
+
+.truck {
+  display: none;
+  text-align: center;
+  font-size: 40px;
+  color: #577926;
+}
+
+.clock {
+  display: none;
+  text-align: center;
+  font-size: 40px;
+  color: #577926;
+}
+
+.secondary-ul a {
   display: flex;
   flex-direction: row;
   padding: 1px 16px;
@@ -18,13 +64,13 @@
   color: black;
 }
 
-.inbeded{
+.inbeded {
   margin-left: auto;
   display: flex;
   padding-right: 1rem;
 }
 
-.inbeded a{
+.inbeded a {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -35,7 +81,7 @@
   color: #577926;
 }
 
-.spans{
+.spans {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -44,4 +90,116 @@
   text-decoration: none;
   list-style: none;
   color: black;
+}
+
+.span2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1px 7px;
+  font-size: 16px;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .secondary-nav-container {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #f5f5f5;
+  }
+
+  .secondary-ul {
+    display: none;
+    flex-direction: row;
+  }
+
+  .delivery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 180px;
+    height: 120px;
+    border: 5px solid white;
+  }
+
+  .delivery li {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .time {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 180px;
+    height: 120px;
+    border: 5px solid white;
+  }
+
+  .time li {
+    
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .truck {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: #577926;
+  }
+
+  .clock {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: #577926;
+  }
+
+  .secondary-ul a {
+    display: flex;
+    flex-direction: row;
+    padding: 1px 16px;
+    font-size: 14px;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+  }
+
+  .inbeded {
+    margin-left: auto;
+    display: flex;
+    padding-right: 0rem;
+  }
+
+  .inbeded a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 900;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+  }
+
+  .spans {
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    padding: 1px 7px;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    text-align: center;
+  }
+
+  .span2 {
+    display: none;
+  }
 }
