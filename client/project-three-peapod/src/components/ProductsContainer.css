@@ -32,6 +32,16 @@
   align-items: center;
  }
 
+ .view-all {
+   display: flex;
+   flex-direction: row;
+ }
+
+ .plus-sign {
+  font-size: 18px;
+  margin: 14px;
+ }
+
  .headline {
   display: flex;
   flex-direction: row;
