@@ -20,3 +20,18 @@
     padding: 0px;
     margin: 0px;
 }
+
+
+.produce, .meat, .seafood, .meal-kits, .deli, .dairy, .beverages, .bread{
+    border:1px solid black;
+    max-width: 190px;
+    list-style: none;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    margin: 0px 0px
+}
+
+.produce-class, .meat-class, .seafood-class, .kits-class, .deli-class, .dairy-class, .beverages-class, .bread-class{
+   height: 50px;
+   width: 50px;
+}
