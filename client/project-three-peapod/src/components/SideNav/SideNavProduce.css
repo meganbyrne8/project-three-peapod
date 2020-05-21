@@ -1,3 +1,8 @@
+.dd-dropdown {
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
 .arrivals{
     border:1px solid black;
     max-width: 190px;
@@ -36,6 +41,8 @@
     
 }
 
+
+
 .dd-dropdown a {
     text-decoration: none;
     color: black;
@@ -51,4 +58,50 @@
 
 h3{
     font-weight: lighter;
+}
+
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    
+    .dd-dropdown {
+        overflow-y: scroll;
+        max-height: 300px;
+    }
+ 
+.arrivals{
+    border:1px solid black;
+    max-width: 375px;
+    list-style: none;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.organic{
+    border:1px solid black;
+    max-width: 375px;
+    list-style: none;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.side-produce, .side-meat, .side-seafood, .side-meal-kits, .side-deli, .side-dairy, .side-beverages, .side-bread{
+    display: flex;
+    flex-direction: row;
+    border:1px solid black;
+    max-width: 375px;
+    list-style: none;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin: 0px 0px;
+    align-items: center;
+    
+}
+
+
+    
+    
+    
 }
