@@ -6,12 +6,12 @@
   background-color: #577926;
   color: white;
   border-radius: 10px;
-  width: 8rem;
+  width: 7rem;
   height:50px;
 }
 
 .icon{
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   margin: 0 auto;
   padding-right: 10px;
@@ -20,5 +20,37 @@
 
 .price{
   padding-left:25px;
-  font-size: 16px;
+  font-size: min(15px)
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+    .shopping-cart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      background-color: #577926;
+      color: white;
+      border-radius: 10px;
+      width: 7rem;
+      height:40px;
+    }
+    
+    .icon{
+      font-size: 20px;
+      text-align: center;
+      margin: 0 auto;
+      padding-right: 10px;
+    
+    }
+    
+    .price{
+      padding-left:25px;
+      font-size: min(15px)
+    }
 }
