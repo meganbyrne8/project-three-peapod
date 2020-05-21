@@ -8,12 +8,18 @@ import BackMenuButton from "./ProductItemImages/BackMenuButton.png"
 function ShoppingList() {
     return (
         <Layout>
-        <div className="shopping-bar">
-           <div className="click-back-button">
-              <img src={BackMenuButton} className="back-button" />
-            </div>
-           <h3>Shopping List</h3> 
-        </div>
+
+        <header className="shopping-bar">
+                    <div className="close-out-button">
+                        <img src={BackMenuButton} className="back-button" />
+                    </div>
+                    <div className="section-title">
+                        <h3>Shopping List</h3>
+                    </div>
+                </header>
+
+
+
 
         <div className="createNew">
             <p>Create New List</p>

@@ -8,13 +8,14 @@
   font-weight: bolder;
   font-size: 18px;
   font-family: 'Roboto', sans-serif; 
+  text-align: center;
 }
-
-
 
 .back-button {
    width: 45px;
    height: 45px;
+   margin-left: 10px;
+   padding-top: 10px;
 
  }
 

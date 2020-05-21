@@ -1,3 +1,8 @@
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
 
 .center-nav {
     display: flex;
@@ -6,12 +11,9 @@
     padding-top: 20px;
     padding-bottom: 30px; 
     font-size: 18px; 
-    min-width: ;
-    /* padding-left: 200px; */
   }
   
-  
-  
+
   .account p {
     color: #7c7472;
     padding-top: 10px; 
@@ -19,7 +21,6 @@
     font-size: 15px;
     padding-left: 375px;
     padding-right: 20px;
- 
   }
   
   .sign{
@@ -38,27 +39,30 @@
     background-size: cover;
     height: 120vh;   
     margin-top: -150px;
+    
 }
 
 .shop h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 48px;
   padding-top: 250px;
-  padding-left: 410px;
-  padding-right: 445px;
+  padding-left: 420px;
+  padding-right: 440px;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .of h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 48px;
-  padding-left: 400px;
+  padding-left: 420px;
   padding-right: 440px;
   text-align: center;
   margin-top: -40px;
-}
+} 
 
-.your h2 {
+  .your h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 48px;
   padding-left: 420px;
@@ -95,7 +99,7 @@
   padding-right: 520px;
   padding-left: 500px;
   margin-top: -30px;
-}
+} 
 
 .radio {
   display: flex;
@@ -103,10 +107,10 @@
   position: relative;
   font-size: 16px;   
   font-family: 'Roboto', sans-serif;
-  padding-left: 550px;
+  padding-left: 560px;
   padding-right: 550px;
   margin-bottom: 12px;
-  margin-top: 15px;
+  margin-top: 30px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -118,14 +122,15 @@
 .buttonhome {
   display: flex;
   justify-content: center;
-  height: 90%;
-  width: 50%;
-  padding-left: 50px;
-  padding-right: 20px;
+  height: 100%;
+  width: 70%;
+  padding-left: 10px;
+  padding-right: 80px;
 }
 .buttonbus {
-  height: 90%;
-  width: 55%;
+  height: 95%;
+  width: 80%;
+  padding-right: 30px;
 }
 .search-plus-button {
   background-repeat: no-repeat;
@@ -135,6 +140,8 @@
   height: 80px;
   width: 420px;
   margin: 0 auto;
+  padding-left: 50px;
+
 
 }
 .search-plus-button a{
@@ -142,6 +149,7 @@
   top: -20px;
   right: -40px;
   padding-right: 5px;
+  font-size: 10px;
 }
 
 .zipbar {
@@ -158,13 +166,174 @@ button {
   border-radius: 30px;
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 15px;
+  font-weight:bold;
   letter-spacing: 0.1px;
   margin: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
 
+    .peapod {
+      display: flex;
+      justify-content: center;
+    }
+
+    .center-nav {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      padding-top: 20px;
+      padding-bottom: 30px; 
+      font-size: 10px; 
+    }
+
+
+  .sign a{
+    font-family: 'Roboto', sans-serif;
+    color:#878f3d; 
+    text-decoration: none;
+    font-size: 15px;  
+  }
+
+  .cover {
+    background-image: url('https://i.imgur.com/G9s838K.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 700px; 
+    
+}
+
+.shop h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top:-20px;
+}
+
+.of h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px; 
+  text-align: center;
+  margin-top: -25px;
+} 
+
+  .your h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  text-align: center;
+  margin-top: -25px;
+}
+
+.bus h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+  text-align: center;
+  margin-top: -25px;
+}
+
+.cover h3 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-top: -15px;
+   
+}
+
+.cover p {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-top: -20px;
+} 
+
+  .radio {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    font-size: 15px;  
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 12px;
+    margin-top: 325px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+  }
+  
+  
+  .buttonhome {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    width: 50%;
+    padding-left: 60px;
+    padding-right: 80px;
+  }
+  .buttonbus {
+    height: 90%;
+    width: 60%;
+    padding-right: 30px;
+    padding-left: 40px;
+  }
+  .search-plus-button {
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-size: contain;
+    height: 80px;
+    width: 300px;
+    margin: 0 auto;
+    padding-left: 20px;
+  
+  }
+  .search-plus-button a{
+    position: absolute;
+    top: -20px;
+    right: -40px;
+    padding-right: 5px;
+    font-size: 10px;
+  }
+  
+  .zipbar {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 40px;
+  }
+  
+  button {
+    background-color: #4d6e22;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight:bold;
+    letter-spacing: 0.1px;
+    margin: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+    
+
+}

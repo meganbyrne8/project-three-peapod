@@ -25,7 +25,7 @@ const Home = () => {
       </div>
     </div>
       <div className="cover">
-
+      
         <div className="shop">
         <h2>Shop for thousands</h2>
         </div>
@@ -42,10 +42,10 @@ const Home = () => {
           <h2>business</h2>
         </div>
 
-        <h3>Grocery shop from anywhere.</h3>
+        <h3><strong>Grocery shop from anywhere.</strong></h3>
         <p><strong>Delivery on your schedule.</strong></p>
       
-
+ 
 <form>
 <div className="radio">
           <div>
@@ -59,8 +59,7 @@ const Home = () => {
       </form>
 
       <div style={{backgroundImage: `url(${zipbar})`}}className="search-plus-button">
-
-          <Link to="/browse"><button><strong>Browse Now</strong></button></Link>
+          <Link to="/browse"><button>Browse Now</button></Link>
       </div>
     </div>
     <Footer />
