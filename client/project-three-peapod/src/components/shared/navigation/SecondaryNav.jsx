@@ -20,7 +20,7 @@ export default function SecondaryNav() {
         <Link>
           <li> Order Genius</li>
         </Link>
-        <Link>
+        <Link to="/home">
           <li>Shopping List</li>
         </Link>
         <Link>
