@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import Autosuggest from "react-autosuggest";
-import "./Suggestions.css"
+import "./Suggestions.css";
 
 const languages = [
   {
-    name: "Produce"   
+    name: "Produce",
   },
   {
     name: "Meat",
@@ -26,7 +26,7 @@ const languages = [
   },
   {
     name: "Bread",
-  }
+  },
 ];
 
 // https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions#Using_Special_Characters
@@ -46,7 +46,7 @@ function getSuggestions(value) {
   return languages.filter((language) => regex.test(language.name));
 }
 
-function getSuggestionValue(suggestion) {
+function getSuggestion(suggestion) {
   return suggestion.name;
 }
 
@@ -70,13 +70,13 @@ class Suggestions extends Component {
     });
   };
 
-  onSuggestionsFetchRequested = ({ value }) => {
+  onSuggestionsGet = ({ value }) => {
     this.setState({
       suggestions: getSuggestions(value),
     });
   };
 
-  onSuggestionsClearRequested = () => {
+  onSuggestionsClear = () => {
     this.setState({
       suggestions: [],
     });
@@ -93,9 +93,9 @@ class Suggestions extends Component {
     return (
       <Autosuggest
         suggestions={suggestions}
-        onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
-        onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-        getSuggestionValue={getSuggestionValue}
+        onSuggestionsGet={this.onSuggestionsGet}
+        onSuggestionsClear={this.onSuggestionsClear}
+        getSuggestion={getSuggestion}
         renderSuggestion={renderSuggestion}
         inputProps={inputProps}
       />
