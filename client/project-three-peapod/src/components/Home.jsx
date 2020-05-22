@@ -27,20 +27,9 @@ const Home = () => {
       <div className="cover">
       
         <div className="shop">
-        <h2>Shop for thousands</h2>
+        <h2>Shop for thousands of grocery items for your home or business</h2>
         </div>
 
-        <div className="of">
-        <h2>of grocery items for</h2>
-        </div>
-
-        <div className="your">
-        <h2>your home or</h2>
-        </div>
-
-        <div className="bus">
-          <h2>business</h2>
-        </div>
 
         <h3><strong>Grocery shop from anywhere.</strong></h3>
         <p><strong>Delivery on your schedule.</strong></p>

@@ -6,21 +6,20 @@
 
 .center-nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     height: 7vh;
     padding-top: 20px;
     padding-bottom: 30px; 
     font-size: 18px; 
   }
   
-
   .account p {
     color: #7c7472;
-    padding-top: 10px; 
+    top: 30px; 
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    padding-left: 375px;
-    padding-right: 20px;
+    right: 20px;
+    position: absolute;
   }
   
   .sign{
@@ -46,38 +45,11 @@
   font-family: 'Roboto', sans-serif;
   font-size: 48px;
   padding-top: 250px;
-  padding-left: 420px;
-  padding-right: 440px;
+  width: 500px;
+  margin: 0 auto;
   text-align: center;
   display: flex;
   justify-content: center;
-}
-
-.of h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 48px;
-  padding-left: 420px;
-  padding-right: 440px;
-  text-align: center;
-  margin-top: -40px;
-} 
-
-  .your h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 48px;
-  padding-left: 420px;
-  padding-right: 440px;
-  text-align: center;
-  margin-top: -40px;
-}
-
-.bus h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 48px;
-  padding-left: 420px;
-  padding-right: 440px;
-  text-align: center;
-  margin-top: -40px;
 }
 
 .cover h3 {
@@ -85,10 +57,10 @@
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
-    padding-right: 500px;
-    padding-left: 475px;
-    margin-top: -35px;
-   
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+ 
 }
 
 .cover p {
@@ -96,42 +68,33 @@
   justify-content: center;
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
-  padding-right: 520px;
-  padding-left: 500px;
-  margin-top: -30px;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+
 } 
 
 .radio {
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
   position: relative;
-  font-size: 16px;   
   font-family: 'Roboto', sans-serif;
-  padding-left: 560px;
-  padding-right: 550px;
-  margin-bottom: 12px;
-  margin-top: 30px;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; 
+  width: 450px;
+  padding-top: 20px;
+  margin: 0 auto;
 }
-
 
 .buttonhome {
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 70%;
-  padding-left: 10px;
-  padding-right: 80px;
+  width: 50%;
+  padding-left: 50px;
+
 }
 .buttonbus {
-  height: 95%;
-  width: 80%;
-  padding-right: 30px;
+  width: 45%;
+  padding-left: 50px;
 }
+
 .search-plus-button {
   background-repeat: no-repeat;
   background-position: center;
@@ -187,17 +150,23 @@ button {
       display: flex;
       justify-content: center;
     }
-
     .center-nav {
       display: flex;
-      justify-content: flex-end;
-      flex-wrap: wrap;
+      justify-content: center;
       padding-top: 20px;
       padding-bottom: 30px; 
-      font-size: 10px; 
     }
-
-
+    
+    .account p {
+      color: #7c7472;
+      top: 60px; 
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      text-align: center;
+      right: 50px;
+      position: absolute;
+    }
+ 
   .sign a{
     font-family: 'Roboto', sans-serif;
     color:#878f3d; 
@@ -211,9 +180,9 @@ button {
     background-size: cover;
     background-position: center;
     max-width: 100%;
-    height: 700px; 
-    
+    height: 700px;   
 }
+
 
 .shop h2 {
   font-family: 'Roboto', sans-serif;
@@ -221,28 +190,7 @@ button {
   text-align: center;
   display: flex;
   justify-content: center;
-  margin-top:-20px;
-}
-
-.of h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 26px; 
-  text-align: center;
-  margin-top: -25px;
-} 
-
-  .your h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 26px;
-  text-align: center;
-  margin-top: -25px;
-}
-
-.bus h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 26px;
-  text-align: center;
-  margin-top: -25px;
+  margin-top: 20px;
 }
 
 .cover h3 {
@@ -269,12 +217,7 @@ button {
     font-size: 15px;  
     font-family: 'Roboto', sans-serif;
     margin-bottom: 12px;
-    margin-top: 325px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; 
+    margin-top: 344px;
   }
   
   

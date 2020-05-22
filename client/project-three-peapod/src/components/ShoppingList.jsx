@@ -8,17 +8,16 @@ import BackMenuButton from "./ProductItemImages/BackMenuButton.png"
 function ShoppingList() {
     return (
         <Layout>
-
+        <div className="shopping--list-container">
         <header className="shopping-bar">
                     <div className="close-out-button">
-                        <img src={BackMenuButton} className="back-button" />
+                        <img src={BackMenuButton} className="back-shop-button" />
                     </div>
                     <div className="section-title">
                         <h3>Shopping List</h3>
                     </div>
                 </header>
-
-
+            </div>
 
 
         <div className="createNew">
