@@ -6,12 +6,14 @@ import "./ProductsContainer.css";
 import Layout from "./shared/Layout";
 import SideNavContainer from "./SideNav/SideNavContainer";
 import BackMenuButton from "./ProductItemImages/BackMenuButton.png"
+import Small_Chat from "./ProductItemImages/Small_Chat.png"
+
 
 export default class ProductsContainer extends Component {
   constructor() {
     super();
     this.state = {
-      products: [],
+      products: []
     };
   }
 
@@ -59,6 +61,9 @@ export default class ProductsContainer extends Component {
               <div className="side-nav-section">
                 <SideNavContainer />
               </div>
+              {/* <div className="small-chat-sticky">
+                <img src={Small_Chat} />
+              </div> */}
               <div className="main-section">
                 <div className="product-gallery">{populateProducts}</div>
               </div>
