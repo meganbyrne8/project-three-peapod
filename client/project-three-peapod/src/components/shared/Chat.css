@@ -19,6 +19,16 @@ justify-content: flex-end;
   and (orientation: portrait) { 
 
 
+
+    .chatbox {
+      position: -webkit-sticky;
+      position: sticky; 
+      bottom: 0px;
+      padding-left: 65%;
+      display: flex;
+      justify-content: flex-end;
+      }
+
     .box {
         height: 90%;
         width: 90%;
